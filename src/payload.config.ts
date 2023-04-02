@@ -4,7 +4,7 @@ import Users from './collections/Users';
 import Studios from "./collections/Studios";
 
 export default buildConfig({
-  serverURL: 'http://localhost:3000',
+  serverURL: process.env.PAYLOAD_URL,
   admin: {
     user: Users.slug,
   },
