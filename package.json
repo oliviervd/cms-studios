@@ -18,6 +18,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "graphql": "^16.6.0",
+    "heroku": "^8.0.2",
     "payload": "^1.6.29"
   },
   "resolutions": {
