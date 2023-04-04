@@ -8,17 +8,20 @@ const Studios: CollectionConfig = {
         {
             name: 'titlenl',
             label: "Title (DUTCH)",
-            type: "text"
+            type: "text",
+            required: true
         },
         {
             name: 'titleen',
             label: 'Title (ENGLISH)',
-            type: 'text'
+            type: 'text',
+            required: true
         },
         {
             name: 'titlefr',
             label: 'Title (FRENCH)',
-            type: 'text'
+            type: 'text',
+            required: true
         },
 
         // introduction text (short)
