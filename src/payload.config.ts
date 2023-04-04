@@ -2,6 +2,7 @@ import { buildConfig } from 'payload/config';
 import path from 'path';
 import Users from './collections/Users';
 import Studios from "./collections/Studios";
+import Agents from "./collections/Agents"
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
@@ -9,8 +10,9 @@ export default buildConfig({
     user: Users.slug,
   },
   collections: [
-    Users,
-    Studios
+      Users,
+      Studios,
+      Agents
   ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
