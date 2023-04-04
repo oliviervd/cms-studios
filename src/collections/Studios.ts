@@ -6,37 +6,38 @@ const Studios: CollectionConfig = {
 
         //title (name of the studio)
         {
-            name: 'titlenl',
+            name: 'titleNl',
             label: "Title (DUTCH)",
             type: "text",
             required: true
         },
         {
-            name: 'titleen',
+            name: 'titleEn',
             label: 'Title (ENGLISH)',
             type: 'text',
             required: true
         },
         {
-            name: 'titlefr',
+            name: 'titleFr',
             label: 'Title (FRENCH)',
             type: 'text',
             required: true
         },
 
         // introduction text (short)
+
         {
-            name: 'introductionnl',
+            name: 'introductionNl',
             label: 'Introduction (DUTCH)',
             type: 'richText'
         },
         {
-            name: 'introductionen',
+            name: 'introductionEn',
             label: 'Introduction (ENGLISH)',
             type: 'richText'
         },
         {
-            name: 'introductionfr',
+            name: 'introductionFr',
             label: 'Introduction (FRENCH)',
             type: 'richText'
         }

@@ -15,8 +15,8 @@ const Agents: CollectionConfig = {
             name: 'familyName',
             label: 'last name (family name)',
             type: "text",
-            required:true,
-        }
+            required:true
+        },
 
         // bio (not required)
         {
