@@ -7,7 +7,7 @@ import Agents from "./collections/Agents"
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
   admin: {
-    user: Admins.slug,
+    user: Users.slug,
   },
   collections: [
       Users,
