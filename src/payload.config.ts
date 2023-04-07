@@ -1,16 +1,16 @@
 import { buildConfig } from 'payload/config';
 import path from 'path';
-import Users from './collections/Users';
+import Admins from './collections/Admins';
 import Studios from "./collections/Studios";
 import Agents from "./collections/Agents"
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
   admin: {
-    user: Users.slug,
+    user: Admins.slug,
   },
   collections: [
-      Users,
+      Admins,
       Studios,
       Agents
   ],
