@@ -2,13 +2,7 @@ import { CollectionConfig } from 'payload/types';
 
 const Users: CollectionConfig = {
   slug: 'users',
-  auth: {
-    useAPIKey: true,
-    tokenExpiration: 7200, // how long (seconds) to keep the user logged in.
-    verify: true,
-    maxLoginAttempts: 3,
-    lockTime: 600 * 1000, // time period to allow max login attempts.
-  },
+  auth: true,
   admin: {
     useAsTitle: 'email',
   },
@@ -16,17 +10,8 @@ const Users: CollectionConfig = {
     read: () => true,
   },
   fields: [
-    {
-      name: 'role',
-      type: 'select',
-      required: true,
-      options: [
-          'user',
-          'admin',
-          'editor',
-          'developer'
-      ]
-    }
+    // Email added by default
+    // Add more fields as needed
   ],
 };
 
