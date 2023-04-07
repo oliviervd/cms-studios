@@ -1,6 +1,6 @@
 import { buildConfig } from 'payload/config';
 import path from 'path';
-import Admins from './collections/Admins';
+import Users from './collections/Admins';
 import Studios from "./collections/Studios";
 import Agents from "./collections/Agents"
 
@@ -10,7 +10,7 @@ export default buildConfig({
     user: Admins.slug,
   },
   collections: [
-      Admins,
+      Users,
       Studios,
       Agents
   ],
