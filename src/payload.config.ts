@@ -4,6 +4,7 @@ import Users from './collections/Users';
 import Studios from "./collections/Studios";
 import Agents from "./collections/Agents";
 import Admins from "./collections/Admins";
+import StudioPost from "./collections/StudioPost";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
@@ -14,6 +15,7 @@ export default buildConfig({
       Admins,
       Users,
       Studios,
+      StudioPost,
       Agents
   ],
   typescript: {
