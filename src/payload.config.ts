@@ -1,6 +1,6 @@
 import { buildConfig } from 'payload/config';
 import path from 'path';
-import Users from './collections/Admins';
+import Users from './collections/Users';
 import Studios from "./collections/Studios";
 import Agents from "./collections/Agents"
 
