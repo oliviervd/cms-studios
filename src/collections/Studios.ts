@@ -1,29 +1,11 @@
 import { CollectionConfig } from "payload/types";
+import titles from "../fields/titles";
 
 const Studios: CollectionConfig = {
     slug: 'studios',
     fields: [
-
-        //title (name of the studio)
-        {
-            name: 'titleNl',
-            label: "Title (DUTCH)",
-            type: "text",
-            required: true
-        },
-        {
-            name: 'titleEn',
-            label: 'Title (ENGLISH)',
-            type: 'text',
-            required: true
-        },
-        {
-            name: 'titleFr',
-            label: 'Title (FRENCH)',
-            type: 'text',
-            required: true
-        },
-
+        //titles
+        titles,
         // introduction text (short)
 
         {
