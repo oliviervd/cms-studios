@@ -3,6 +3,12 @@ import postCategory from "../fields/postCategory";
 
 const StudioEvent: CollectionConfig = {
     slug: "studioEvent",
+    access: {
+        read: ()=> true
+    },
+    versions: {
+        drafts: true
+    },
     fields: [
         {
             name: "eventTitle",
