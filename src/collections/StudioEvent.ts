@@ -1,6 +1,8 @@
 import {CollectionConfig} from "payload/types";
 import postCategory from "../fields/postCategory";
 import {hasAccessOrPublished} from "../access/hasAccessOrPublished";
+import setCategory from "../fields/setCategory";
+import contentStatus from "../fields/contentStatus";
 
 const StudioEvent: CollectionConfig = {
     slug: "studioEvent",
@@ -28,7 +30,14 @@ const StudioEvent: CollectionConfig = {
             label: "end date",
             type: "date",
         },
-        postCategory
+        {
+            type: "row",
+            fields: [
+                postCategory,
+                setCategory,
+                contentStatus
+            ]
+        }
     ]
 }
 

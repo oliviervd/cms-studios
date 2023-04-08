@@ -6,6 +6,7 @@ import contentStatus from "../fields/contentStatus";
 import {isEditor} from "../access/isEditor";
 import {isAdmin} from "../access/isAdmin";
 import {hasAccessOrPublished} from "../access/hasAccessOrPublished";
+import setCategory from "../fields/setCategory";
 
 const StudioPosts: CollectionConfig = {
     slug: 'studioPost',
@@ -24,7 +25,8 @@ const StudioPosts: CollectionConfig = {
             type: "row",
             fields: [
                 postCategory,
-                contentStatus
+                contentStatus,
+                setCategory
             ]
         }
     ]
