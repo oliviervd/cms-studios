@@ -3,7 +3,6 @@ import titles from "../fields/titles";
 import textBlock from "../fields/textBlock"
 import postCategory from "../fields/postCategory";
 import {isAdmin} from "../access/isAdmin";
-import {isAdminOrSelf} from "../access/isAdminOrSelf";
 import {isEditor} from "../access/isEditor";
 
 //todo: make studio labels global?
