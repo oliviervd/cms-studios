@@ -7,6 +7,9 @@ import publishedOn from "../fields/publishedOn";
 
 const StudioEvent: CollectionConfig = {
     slug: "studioEvent",
+    admin: {
+        useAsTitle:"eventTitle"
+    },
     access: {
         read: hasAccessOrPublished
     },

@@ -11,6 +11,9 @@ import publishedOn from "../fields/publishedOn";
 
 const StudioPosts: CollectionConfig = {
     slug: 'studioPost',
+    admin: {
+        useAsTitle:"titleEn"
+    },
     access: {
         read: hasAccessOrPublished,
         update: isEditor,

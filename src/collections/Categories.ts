@@ -8,6 +8,9 @@ import publishedOn from "../fields/publishedOn";
 
 const categories: CollectionConfig = {
     slug: "categories",
+    admin: {
+        useAsTitle:"titleEn"
+    },
     access: {
         read: hasAccessOrPublished,
         create: isEditor,

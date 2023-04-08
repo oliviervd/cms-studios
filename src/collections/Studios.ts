@@ -10,6 +10,9 @@ import publishedOn from "../fields/publishedOn";
 //todo: make studio labels global?
 const Studios: CollectionConfig = {
     slug: 'studios',
+    admin: {
+        useAsTitle: "titleEn"
+    },
     access: {
         read: hasAccessOrPublished,
         create: isAdmin,
@@ -17,7 +20,7 @@ const Studios: CollectionConfig = {
         update: isEditor
     },
     fields: [
-        //titles
+        //titles (DUTCH + FR)
         titles,
         // introduction text (short)
         //todo: add media
