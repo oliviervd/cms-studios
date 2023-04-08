@@ -5,11 +5,12 @@ import postCategory from "../fields/postCategory";
 import contentStatus from "../fields/contentStatus";
 import {isEditor} from "../access/isEditor";
 import {isAdmin} from "../access/isAdmin";
+import {hasAccessOrPublished} from "../access/hasAccessOrPublished";
 
 const StudioPosts: CollectionConfig = {
     slug: 'studioPost',
     access: {
-        read: () => true, // change to only make public when published, otherwise use access control.
+        read: hasAccessOrPublished,
         update: isEditor,
         delete: isAdmin
     },

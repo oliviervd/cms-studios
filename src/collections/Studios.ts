@@ -4,12 +4,14 @@ import textBlock from "../fields/textBlock"
 import postCategory from "../fields/postCategory";
 import {isAdmin} from "../access/isAdmin";
 import {isEditor} from "../access/isEditor";
+import {hasAccessOrPublished} from "../access/hasAccessOrPublished";
 
 //todo: make studio labels global?
 const Studios: CollectionConfig = {
     slug: 'studios',
     access: {
-        read: () => true,
+        read: hasAccessOrPublished,
+        create: isAdmin,
         delete: isAdmin,
         update: isEditor
     },

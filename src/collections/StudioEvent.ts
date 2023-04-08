@@ -1,10 +1,11 @@
 import {CollectionConfig} from "payload/types";
 import postCategory from "../fields/postCategory";
+import {hasAccessOrPublished} from "../access/hasAccessOrPublished";
 
 const StudioEvent: CollectionConfig = {
     slug: "studioEvent",
     access: {
-        read: ()=> true
+        read: hasAccessOrPublished
     },
     versions: {
         drafts: true
