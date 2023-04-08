@@ -6,10 +6,22 @@ const postCategory: Field = {
     type: "select",
     required: true,
     options: [
-        "studioGraphic",
-        "studioDigital",
-        "studioCollection",
-        "studioCare"
+        {
+            label: "studio graphic",
+            value: "studioGraphic"
+        },
+        {
+            label: "studio digital",
+            value: "studioDigital"
+        },
+        {
+            label: "studio collection",
+            value: "studioCollection"
+        },
+        {
+            label: "studio care",
+            value: "studioCare"
+        }
     ]
 }
 
