@@ -19,8 +19,18 @@ const Users: CollectionConfig = {
       name: "roles",
       type: "select",
       options: [
-          "admin",
-          "editor"
+        {
+          label: "Admin",
+          value: "admin"
+        },
+        {
+          label: "Editor",
+          value: "editor"
+        },
+        {
+          label: "User",
+          value: "user"
+        }
       ]
     }
   ],
