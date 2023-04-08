@@ -5,6 +5,7 @@ import Studios from "./collections/Studios";
 import Agents from "./collections/Agents";
 import StudioPost from "./collections/StudioPost"
 import studioEvent from "./collections/StudioEvent";
+import Categories from "./collections/Categories";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
@@ -16,6 +17,7 @@ export default buildConfig({
       Studios,
       StudioPost,
       studioEvent,
+      Categories,
       Agents
   ],
   typescript: {
