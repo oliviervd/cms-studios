@@ -1,5 +1,6 @@
 import { CollectionConfig } from 'payload/types';
 import {isAdmin, isAdminFieldLevel} from "../access/isAdmin";
+import {isAdminOrSelf} from "../access/isAdminOrSelf";
 
 const Users: CollectionConfig = {
   slug: 'users',
@@ -10,10 +11,25 @@ const Users: CollectionConfig = {
     useAsTitle: 'email',
   },
   access: {
-    // only admins can create users
-    read: () => true,
+    create: isAdmin,
+    read: isAdminOrSelf,
+    update: isAdminOrSelf,
+    delete: isAdmin
   },
   fields: [
+    {
+      type: 'row',
+      fields: [
+        {
+          name: 'firstName',
+          type: 'text'
+        },
+        {
+          name: 'lastName',
+          type: 'text'
+        }
+      ]
+    },
     {
       name: "roles",
       type: "select",
