@@ -13,6 +13,9 @@ const StudioPosts: CollectionConfig = {
         update: isEditor,
         delete: isAdmin
     },
+    versions: {
+        drafts: true
+    },
     fields:[
         titles,
         textBlock,
