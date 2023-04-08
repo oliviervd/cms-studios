@@ -7,9 +7,18 @@ const contentStatus: Field = {
     required: true,
     defaultValue: ["draft"],
     options: [
-        "draft",
-        "awaiting review",
-        "published"
+        {
+            value:"draft",
+            label:"draft"
+        },
+        {
+            value:"pendingReview",
+            label:"pending review"
+        },
+        {
+            value:"published",
+            label:"published"
+        }
     ]
 }
 
