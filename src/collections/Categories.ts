@@ -9,7 +9,8 @@ import publishedOn from "../fields/publishedOn";
 const categories: CollectionConfig = {
     slug: "categories",
     admin: {
-        useAsTitle:"titleEn"
+        useAsTitle:"titleEn",
+        description: "categories used to sort and cluster events or content such as blog posts"
     },
     access: {
         read: hasAccessOrPublished,
