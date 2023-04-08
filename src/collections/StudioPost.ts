@@ -6,6 +6,9 @@ import contentStatus from "../fields/contentStatus";
 
 const StudioPosts: CollectionConfig = {
     slug: 'studioPost',
+    access: {
+        read: () => true, // change to only make public when published, otherwise use access control.
+    },
     fields:[
         titles,
         textBlock,
