@@ -9,7 +9,7 @@ import Categories from "./collections/Categories";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
-  cors: [process.env.PAYLOAD_URL],
+  cors: [process.env.PAYLOAD_URL].filter(Boolean),
   admin: {
     user: Users.slug,
   },
