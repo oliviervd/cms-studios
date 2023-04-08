@@ -5,6 +5,7 @@ import postCategory from "../fields/postCategory";
 import {isAdmin} from "../access/isAdmin";
 import {isEditor} from "../access/isEditor";
 import {hasAccessOrPublished} from "../access/hasAccessOrPublished";
+import publishedOn from "../fields/publishedOn";
 
 //todo: make studio labels global?
 const Studios: CollectionConfig = {
@@ -22,7 +23,8 @@ const Studios: CollectionConfig = {
         //todo: add media
         textBlock,
         // category
-        postCategory
+        postCategory,
+        publishedOn
     ]
 }
 
