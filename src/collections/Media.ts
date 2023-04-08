@@ -13,7 +13,7 @@ const Media: CollectionConfig = {
     access: {
         create: isEditor,
         delete: isAdmin,
-        read: hasAccessOrPublished,
+        read: ()=> true,
         update: isEditor
     },
     fields: [
