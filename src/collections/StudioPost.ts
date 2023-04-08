@@ -23,7 +23,13 @@ const StudioPosts: CollectionConfig = {
         drafts: true
     },
     fields:[
-        titles,
+        {
+            name: 'titleEn',
+            label: 'Title (ENGLISH)',
+            type: 'text',
+            required: true
+        },
+        titles, //dutch and french
         textBlock,
         {
             name: 'author',

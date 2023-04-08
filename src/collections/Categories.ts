@@ -18,7 +18,13 @@ const categories: CollectionConfig = {
         delete: isAdmin
     },
     fields: [
-        titles,
+        {
+            name: 'titleEn',
+            label: 'Title (ENGLISH)',
+            type: 'text',
+            required: true
+        },
+        titles, //dutch and french
         {
             type: "row",
             fields: [

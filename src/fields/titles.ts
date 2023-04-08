@@ -12,12 +12,6 @@ const titles: Field = {
             required: true
         },
         {
-            name: 'titleEn',
-            label: 'Title (ENGLISH)',
-            type: 'text',
-            required: true
-        },
-        {
             name: 'titleFr',
             label: 'Title (FRENCH)',
             type: 'text',

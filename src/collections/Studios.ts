@@ -20,8 +20,13 @@ const Studios: CollectionConfig = {
         update: isEditor
     },
     fields: [
-        //titles (DUTCH + FR)
-        titles,
+        {
+            name: 'titleEn',
+            label: 'Title (ENGLISH)',
+            type: 'text',
+            required: true
+        },
+        titles, //dutch and french
         // introduction text (short)
         //todo: add media
         textBlock,
