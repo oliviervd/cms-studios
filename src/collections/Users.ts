@@ -9,11 +9,20 @@ const Users: CollectionConfig = {
     useAsTitle: 'email',
   },
   access: {
+    // only admins can create users
     read: () => true,
   },
   fields: [
     // Email added by default
     // Add more fields as needed
+    {
+      name: "roles",
+      type: "select",
+      options: [
+          "admin",
+          "editor"
+      ]
+    }
   ],
 };
 
