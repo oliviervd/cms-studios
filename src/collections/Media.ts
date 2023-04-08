@@ -3,6 +3,7 @@ import path from "path";
 import {isEditor} from "../access/isEditor";
 import {isAdmin} from "../access/isAdmin";
 import {hasAccessOrPublished} from "../access/hasAccessOrPublished";
+import postCategory from "../fields/postCategory";
 
 const Media: CollectionConfig = {
     slug: "media",
@@ -20,7 +21,16 @@ const Media: CollectionConfig = {
             name: 'alt',
             type: 'text',
             required: true,
-        }
+        },
+        {
+            name: 'caption',
+            type: "text"
+        },
+        {
+            name: 'credits',
+            type: "text"
+        },
+        postCategory
     ]
 }
 
