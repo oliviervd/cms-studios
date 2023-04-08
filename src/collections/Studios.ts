@@ -12,7 +12,8 @@ import contentStatus from "../fields/contentStatus";
 const Studios: CollectionConfig = {
     slug: 'studios',
     admin: {
-        useAsTitle: "titleEn"
+        useAsTitle: "titleEn",
+        description: "collection containing basic on the four active studios including (title, short description, thumbnail (cover image))"
     },
     access: {
         read: hasAccessOrPublished,
