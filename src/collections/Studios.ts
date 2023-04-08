@@ -6,6 +6,7 @@ import {isAdmin} from "../access/isAdmin";
 import {isEditor} from "../access/isEditor";
 import {hasAccessOrPublished} from "../access/hasAccessOrPublished";
 import publishedOn from "../fields/publishedOn";
+import contentStatus from "../fields/contentStatus";
 
 //todo: make studio labels global?
 const Studios: CollectionConfig = {
@@ -32,7 +33,8 @@ const Studios: CollectionConfig = {
         textBlock,
         // category
         postCategory,
-        publishedOn
+        publishedOn,
+        contentStatus
     ]
 }
 
