@@ -1,4 +1,5 @@
 import { CollectionConfig } from 'payload/types';
+import {isAdmin, isAdminFieldLevel} from "../access/isAdmin";
 
 const Users: CollectionConfig = {
   slug: 'users',
@@ -17,7 +18,12 @@ const Users: CollectionConfig = {
       name: "roles",
       type: "select",
       hasMany: true,
-      defaultValue: "user",
+      saveToJWT: true, // save to JW, so it can be used from "req.user".
+      defaultValue: ["user"],
+      access: {
+        create: isAdminFieldLevel,
+        update: isAdminFieldLevel,
+      },
       options: [
         {
           label: "Admin",
