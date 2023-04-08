@@ -2,12 +2,17 @@ import { CollectionConfig } from "payload/types";
 import titles from "../fields/titles";
 import textBlock from "../fields/textBlock"
 import postCategory from "../fields/postCategory";
+import {isAdmin} from "../access/isAdmin";
+import {isAdminOrSelf} from "../access/isAdminOrSelf";
+import {isEditor} from "../access/isEditor";
 
 //todo: make studio labels global?
 const Studios: CollectionConfig = {
     slug: 'studios',
     access: {
-        read: () => true
+        read: () => true,
+        delete: isAdmin,
+        update: isEditor
     },
     fields: [
         //titles
