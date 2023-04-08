@@ -7,6 +7,7 @@ import {isEditor} from "../access/isEditor";
 import {isAdmin} from "../access/isAdmin";
 import {hasAccessOrPublished} from "../access/hasAccessOrPublished";
 import setCategory from "../fields/setCategory";
+import publishedOn from "../fields/publishedOn";
 
 const StudioPosts: CollectionConfig = {
     slug: 'studioPost',
@@ -22,13 +23,23 @@ const StudioPosts: CollectionConfig = {
         titles,
         textBlock,
         {
+            name: 'author',
+            type: 'relationship',
+            relationTo: 'users',
+            required: true,
+            admin: {
+                position: "sidebar"
+            }
+        },
+        {
             type: "row",
             fields: [
                 postCategory,
                 contentStatus,
                 setCategory
             ]
-        }
+        },
+        publishedOn
     ]
 }
 
