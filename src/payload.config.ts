@@ -6,10 +6,11 @@ import Agents from "./collections/Agents";
 import StudioPost from "./collections/StudioPost"
 import studioEvent from "./collections/StudioEvent";
 import Categories from "./collections/Categories";
+import Media from "./collections/Media";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
-  cors: ["https://dmg-programstudios.herokuapp.com"].filter(Boolean), // cors
+  cors: ["https://dmg-programstudios.herokuapp.com"].filter(Boolean),
   admin: {
     user: Users.slug,
   },
@@ -19,6 +20,7 @@ export default buildConfig({
       StudioPost,
       studioEvent,
       Categories,
+      Media,
       Agents
   ],
   typescript: {
