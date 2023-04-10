@@ -4,6 +4,7 @@ import {isEditor} from "../access/isEditor";
 import {isAdmin} from "../access/isAdmin";
 import {hasAccessOrPublished} from "../access/hasAccessOrPublished";
 import postCategory from "../fields/postCategory";
+import contentStatus from "../fields/contentStatus";
 
 const Media: CollectionConfig = {
     slug: "media",
@@ -13,7 +14,7 @@ const Media: CollectionConfig = {
     access: {
         create: isEditor,
         delete: isAdmin,
-        read: ()=> true,
+        read: hasAccessOrPublished,
         update: isEditor
     },
     fields: [
@@ -30,7 +31,8 @@ const Media: CollectionConfig = {
             name: 'credits',
             type: "text"
         },
-        postCategory
+        postCategory,
+        contentStatus
     ]
 }
 
