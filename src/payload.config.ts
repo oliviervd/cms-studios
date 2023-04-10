@@ -7,6 +7,7 @@ import StudioPost from "./collections/StudioPost"
 import studioEvent from "./collections/StudioEvent";
 import Categories from "./collections/Categories";
 import Media from "./collections/Media";
+import About from "./collections/About";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
@@ -16,6 +17,7 @@ export default buildConfig({
   },
   collections: [
       Users,
+      About,
       Studios,
       StudioPost,
       studioEvent,
