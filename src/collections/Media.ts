@@ -9,7 +9,8 @@ import contentStatus from "../fields/contentStatus";
 const Media: CollectionConfig = {
     slug: "media",
     upload: {
-        staticDir: path.resolve(__dirname, "../../media")
+        staticDir: path.resolve(__dirname, "../../media"),
+        staticURL: "/media"
     },
     access: {
         create: isEditor,
