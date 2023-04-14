@@ -9,20 +9,20 @@ import contentStatus from "../fields/contentStatus";
 const Media: CollectionConfig = {
     slug: "media",
     upload: {
-        staticDir: path.resolve(__dirname, "../../media"),
+        staticDir: "media",
         staticURL: "/media"
     },
     access: {
         create: isEditor,
         delete: isAdmin,
-        read: hasAccessOrPublished,
+        read: ()=>true,
         update: isEditor
     },
     fields: [
         {
             name: 'alt',
             type: 'text',
-            required: true,
+            //required: true,
         },
         {
             name: 'caption',
