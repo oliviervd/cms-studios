@@ -8,9 +8,8 @@ import studioEvent from "./collections/StudioEvent";
 import Categories from "./collections/Categories";
 
 export default buildConfig({
-  serverURL: process.env.PAYLOAD_URL,
-  cors: ['dmg-programstudios.herokuapp.com'],
-  csrf: ['dmg-programstudios.herokuapp.com'],
+  serverURL: process.env.PAYLOAD_URL || 'http://localhost:3000',
+  cors: '*',
   admin: {
     user: Users.slug,
   },
