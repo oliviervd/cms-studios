@@ -9,7 +9,7 @@ import Categories from "./collections/Categories";
 import Media from "./collections/Media";
 
 export default buildConfig({
-  serverURL: process.env.PAYLOAD_URL,
+  serverURL: process.env.PAYLOAD_URL && 'http://localhost:3000',
   cors: [
       'https://dmg-programstudios.herokuapp.com',
       'http://localhost:3000',
