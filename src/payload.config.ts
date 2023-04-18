@@ -19,7 +19,8 @@ export default buildConfig({
       StudioPost,
       studioEvent,
       Categories,
-      Agents
+      Agents,
+      Media
   ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
