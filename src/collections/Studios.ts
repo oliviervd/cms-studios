@@ -29,12 +29,6 @@ const Studios: CollectionConfig = {
             required: true
         },
         titles, //dutch and french
-        {
-            name:'coverImage',
-            label: 'studio image (cover)',
-            type: "relationship",
-            relationTo: "media"
-        },
         textBlock,
         // category
         postCategory,
