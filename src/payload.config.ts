@@ -6,6 +6,7 @@ import Agents from "./collections/Agents";
 import StudioPost from "./collections/StudioPost"
 import studioEvent from "./collections/StudioEvent";
 import Categories from "./collections/Categories";
+import Media from "./collections/Media";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL || 'http://localhost:3000',
