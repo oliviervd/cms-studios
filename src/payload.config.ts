@@ -9,8 +9,12 @@ import Categories from "./collections/Categories";
 import Media from "./collections/Media";
 
 export default buildConfig({
-  serverURL: process.env.PAYLOAD_URL || 'http://localhost:3000',
-  cors: ['https://dmg-programstudios.herokuapp.com','http://localhost:3000', 'https://p01--admin-cms--qbt6mytl828m.code.run/'], // String[] !
+  serverURL: process.env.PAYLOAD_URL,
+  cors: [
+      'https://dmg-programstudios.herokuapp.com',
+      'http://localhost:3000',
+      'https://p01--admin-cms--qbt6mytl828m.code.run/'
+  ], // String[] !
   admin: {
     user: Users.slug,
   },
