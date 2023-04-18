@@ -28,6 +28,12 @@ const Studios: CollectionConfig = {
             type: 'text',
             required: true
         },
+        {
+            name:'studioImage',
+            label: 'studio image',
+            type: "relationship",
+            relationTo: "media"
+        },
         titles, //dutch and french
         textBlock,
         // category
