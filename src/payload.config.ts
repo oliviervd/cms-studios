@@ -9,7 +9,7 @@ import Categories from "./collections/Categories";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL || 'http://localhost:3000',
-  cors: ['https://dmg-programstudios.herokuapp.com'],
+  cors: ['https://dmg-programstudios.herokuapp.com','http://localhost:3000'], // String[] !
   admin: {
     user: Users.slug,
   },
