@@ -9,7 +9,7 @@ import contentStatus from "../fields/contentStatus";
 const Media: CollectionConfig = {
     slug: "media",
     upload: {
-        staticDir: "media",
+        staticDir: path.resolve(__dirname, "../../media"),
         staticURL: "/media"
     },
     access: {

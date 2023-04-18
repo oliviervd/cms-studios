@@ -30,9 +30,8 @@ const Studios: CollectionConfig = {
         },
         {
             name:'studioImage',
-            label: 'studio image',
             type: "relationship",
-            relationTo: "media"
+            relationTo: 'media'
         },
         titles, //dutch and french
         textBlock,
