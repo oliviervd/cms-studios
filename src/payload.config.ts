@@ -13,7 +13,8 @@ export default buildConfig({
   cors: [
       'https://dmg-programstudios.herokuapp.com',
       'http://localhost:3000',
-      'https://p01--admin-cms--qbt6mytl828m.code.run/'
+      'https://p01--admin-cms--qbt6mytl828m.code.run/',
+      '*'
   ], // String[] !
   admin: {
     user: Users.slug,
