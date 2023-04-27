@@ -12,11 +12,13 @@ export default buildConfig({
     serverURL: process.env.PAYLOAD_URL,
     cors: [
         'https://dmg-programstudios.herokuapp.com',
+        'https://dmg-programstudios.vercel.app/',
         'http://localhost:3000',
         'https://p01--admin-cms--qbt6mytl828m.code.run/'
     ],
     csrf: [
         'https://dmg-programstudios.herokuapp.com',
+        'https://dmg-programstudios.vercel.app/',
         'http://localhost:3000',
         'https://p01--admin-cms--qbt6mytl828m.code.run/'
     ],
