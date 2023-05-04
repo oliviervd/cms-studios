@@ -13,9 +13,9 @@ const Agents: CollectionConfig = {
         },
         {
             name: 'familyName',
-            label: 'last name (family name)',
+            label: 'last name (family name) - if not organisation',
             type: "text",
-            required:true
+            required:false
         },
 
         // bio (not required)
@@ -33,7 +33,19 @@ const Agents: CollectionConfig = {
             name: 'bioFR',
             label: 'biography (FR)',
             type: "richText"
+        },
+        // related to (other actors)
+        {
+            name:"relatedTo",
+            type: "relationship",
+            relationTo: "agents"
+        },
+        {
+            name:"media",
+            type:"relationship",
+            relationTo:"media"
         }
+
     ]
 }
 
