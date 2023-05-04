@@ -41,6 +41,11 @@ const StudioPosts: CollectionConfig = {
             }
         },
         {
+            name:'studioPostImage',
+            type: "relationship",
+            relationTo: 'media'
+        },
+        {
             type: "row",
             fields: [
                 postCategory,
