@@ -28,7 +28,7 @@ export default buildConfig({
     plugins: [
         cloudStorage({
             collections: {
-                'my-collection-slug': {
+                'media': {
                     adapter: adapter,
                 },
             },
