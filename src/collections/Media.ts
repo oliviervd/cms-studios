@@ -10,7 +10,7 @@ const Media: CollectionConfig = {
     slug: "media",
     upload: {
         //staticDir: path.resolve(__dirname, "../../media"),
-        //staticURL: "/media",
+        staticURL: "/media",
         disableLocalStorage: true
     },
     access: {
