@@ -6,7 +6,7 @@ const publishedOn: Field = {
     required: true,
     admin: {
         date: {
-            pickerAppearance: 'dayAndTime'
+            pickerAppearance: 'dayOnly'
         },
         position: "sidebar"
     }
