@@ -2,6 +2,8 @@ import { CollectionConfig } from 'payload/types';
 import {isAdmin, isAdminFieldLevel} from "../access/isAdmin";
 import {isAdminOrSelf} from "../access/isAdminOrSelf";
 
+//todo: add user-collection for (favorite indexes, favorite objects, favorite exhibitions, favorite artists.)
+
 const Users: CollectionConfig = {
   slug: 'users',
   auth: {
