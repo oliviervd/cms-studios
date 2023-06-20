@@ -6,13 +6,19 @@ const titles: Field = {
     type: 'group',
     fields: [
         {
-            name: 'titleNl',
+            name: 'EN',
+            label: "Title (ENGLISH)",
+            type: "text",
+            required: true
+        },
+        {
+            name: 'NL',
             label: "Title (DUTCH)",
             type: "text",
             required: true
         },
         {
-            name: 'titleFr',
+            name: 'FR',
             label: 'Title (FRENCH)',
             type: 'text',
             required: true

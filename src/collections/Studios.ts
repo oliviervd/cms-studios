@@ -12,7 +12,7 @@ import contentStatus from "../fields/contentStatus";
 const Studios: CollectionConfig = {
     slug: 'studios',
     admin: {
-        useAsTitle: "titleEn",
+        //useAsTitle: titles.titleEn, //todo: set
         description: "collection containing basic on the four active studios including (title, short description, thumbnail (cover image))"
     },
     access: {
@@ -22,12 +22,6 @@ const Studios: CollectionConfig = {
         update: isEditor
     },
     fields: [
-        {
-            name: 'titleEn',
-            label: 'Title (ENGLISH)',
-            type: 'text',
-            required: true
-        },
         {
             name:'studioImage',
             type: "relationship",
