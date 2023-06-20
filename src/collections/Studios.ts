@@ -12,7 +12,7 @@ import contentStatus from "../fields/contentStatus";
 const Studios: CollectionConfig = {
     slug: 'studios',
     admin: {
-        //useAsTitle: titles.titleEn, //todo: set
+        useAsTitle: "EN",
         description: "collection containing basic on the four active studios including (title, short description, thumbnail (cover image))"
     },
     access: {
@@ -23,11 +23,28 @@ const Studios: CollectionConfig = {
     },
     fields: [
         {
+            name: 'EN',
+            label: "Title (ENGLISH)",
+            type: "text",
+            required: true
+        },
+        {
+            name: 'NL',
+            label: "Title (DUTCH)",
+            type: "text",
+            required: true
+        },
+        {
+            name: 'FR',
+            label: 'Title (FRENCH)',
+            type: 'text',
+            required: true
+        },
+        {
             name:'studioImage',
             type: "relationship",
             relationTo: 'media'
         },
-        titles, //dutch and french
         textBlock,
         // category
         postCategory,
