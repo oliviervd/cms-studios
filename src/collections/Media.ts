@@ -45,6 +45,20 @@ const Media: CollectionConfig = {
             name: 'credits',
             type: "text"
         },
+        {
+            name: 'objectnumber',
+            type: "text",
+            admin: {
+                description: "if relevant add the objectnumber of the object to which it relates."
+            },
+        },
+        {
+            name: 'project',
+            type: 'text',
+            admin: {
+                description: "if relevant add the project to wich the media relates."
+            },
+        },
         postCategory,
         contentStatus
     ]
