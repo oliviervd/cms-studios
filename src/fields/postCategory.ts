@@ -5,6 +5,7 @@ const postCategory: Field = {
     label: "post category (studio)",
     type: "select",
     required: true,
+    hasMany:true,
     options: [
         {
             label: "studio graphic",
