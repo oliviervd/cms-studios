@@ -23,8 +23,8 @@ const Studios: CollectionConfig = {
     },
     fields: [
         {
-            name: "_id",
-            label: "_id",
+            name: "URI",
+            label: "URI",
             type: "text",
             required: true
         },
