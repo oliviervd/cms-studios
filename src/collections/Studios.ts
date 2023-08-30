@@ -23,6 +23,13 @@ const Studios: CollectionConfig = {
     },
     fields: [
         {
+            name: "id",
+            label: "id",
+            type: "text",
+            required: true
+        },
+        //todo: make group.
+        {
             name: 'EN',
             label: "Title (ENGLISH)",
             type: "text",
@@ -46,7 +53,6 @@ const Studios: CollectionConfig = {
             relationTo: 'media'
         },
         textBlock,
-        // category
         postCategory,
         publishedOn,
         contentStatus
