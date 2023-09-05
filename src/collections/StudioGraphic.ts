@@ -19,20 +19,28 @@ const StudioGraphic: CollectionConfig = {
     },
     fields : [
         {
-            name: "title-EN",
+            name: "titleEN",
             label: "title (ENGLISH)",
             type: "text",
             required: true
         },
         {
-            name: "title-NL",
+            name: "titleNL",
             label: "title (DUTCH)",
             type: "text",
             required: true
         },
         {
-            name: "image",
+            name: "mainMedia",
+            label: "main media",
             type: "relationship",
+            relationTo: 'media'
+        },
+        {
+            name: "additionalMedia",
+            label: "additional media",
+            type: "relationship",
+            hasMany: true,
             relationTo: 'media'
         }
     ]
