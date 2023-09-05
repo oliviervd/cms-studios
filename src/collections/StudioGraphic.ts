@@ -13,9 +13,9 @@ const StudioGraphic: CollectionConfig = {
     access: {
         //todo: restrict access for studio Graphic to only this collection
         read: hasAccessOrPublished,
-        create: isStudioGraphic || isAdmin,
-        delete: isStudioGraphic || isAdmin,
-        update: isStudioGraphic || isAdmin
+        create: isStudioGraphic,
+        delete: isStudioGraphic,
+        update: isStudioGraphic
     },
     fields : [
         {
