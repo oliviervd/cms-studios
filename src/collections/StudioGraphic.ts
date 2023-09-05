@@ -2,7 +2,6 @@ import {CollectionConfig} from "payload/types";
 import {hasAccessOrPublished} from "../access/hasAccessOrPublished";
 import {isStudioGraphic} from "../access/isStudioGraphic";
 import {isAdmin} from "../access/isAdmin";
-import {isEditor} from "../access/isEditor";
 
 
 const StudioGraphic: CollectionConfig = {

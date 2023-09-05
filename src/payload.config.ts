@@ -49,6 +49,7 @@ export default buildConfig({
         user: Users.slug,
     },
     collections: [
+        // add new collections here.
         Users,
         Studios,
         StudioPost,
