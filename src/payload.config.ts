@@ -10,6 +10,7 @@ import StudioPost from "./collections/StudioPost"
 import studioEvent from "./collections/StudioEvent";
 import Categories from "./collections/Categories";
 import Media from "./collections/Media";
+import StudioGraphic from "./collections/StudioGraphic";
 
 export default buildConfig({
     serverURL: process.env.PAYLOAD_URL,
@@ -54,7 +55,8 @@ export default buildConfig({
         studioEvent,
         Categories,
         Agents,
-        Media
+        Media,
+        StudioGraphic
     ],
     typescript: {
         outputFile: path.resolve(__dirname, 'payload-types.ts'),
