@@ -54,6 +54,10 @@ const Users: CollectionConfig = {
         {
           label: "User",
           value: "user"
+        },
+        {
+          label: "Studio Graphic",
+          value: "studio-graphic"
         }
       ]
     }
