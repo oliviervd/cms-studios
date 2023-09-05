@@ -54,9 +54,10 @@ export default buildConfig({
         Studios,
         StudioPost,
         studioEvent,
+        StudioGraphic,
         Categories,
         Agents,
-        Media
+        Media,
     ],
     typescript: {
         outputFile: path.resolve(__dirname, 'payload-types.ts'),
