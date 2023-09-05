@@ -1,7 +1,5 @@
 import {CollectionConfig} from "payload/types";
 import {hasAccessOrPublished} from "../access/hasAccessOrPublished";
-import {isStudioGraphic} from "../access/isStudioGraphic";
-import {isAdmin} from "../access/isAdmin";
 import textBlock from "../fields/textBlock";
 
 const StudioGraphic: CollectionConfig = {
@@ -13,9 +11,9 @@ const StudioGraphic: CollectionConfig = {
     access: {
         //todo: restrict access for studio Graphic to only this collection
         read: hasAccessOrPublished,
-        create: isStudioGraphic,
-        delete: isStudioGraphic,
-        update: isStudioGraphic
+        create: ()=> true,
+        delete: ()=> true,
+        update: ()=>true
     },
     fields : [
         {
