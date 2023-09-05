@@ -22,9 +22,12 @@ const Media: CollectionConfig = {
     hooks: {
         beforeValidate:[
             (req):void => {
-                const image=req.data;
-                // make sure uploaded image is big enough.
-                //todo: add limit of how big an image can be (image size)? - encourage to use bitmap? - this could be an action that is documented in the sustainability manifest.
+
+                const image= req.data;
+
+                // todo: add limit of how big an image can be (image size)? - encourage to use bitmap? - this could be an action that is documented in the sustainability manifest.
+                // todo: add function that creates derivative.
+
                 if (image && image.width < 640) {
                     throw new Error('Image must be at least 640px wide')
                 }

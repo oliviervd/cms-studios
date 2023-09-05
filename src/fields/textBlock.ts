@@ -8,7 +8,8 @@ const textBlock: Field = {
         {
             name: 'introductionNl',
             label: 'Introduction (DUTCH)',
-            type: 'richText'
+            type: 'richText',
+            required: true
         },
         {
             name: 'introductionEn',

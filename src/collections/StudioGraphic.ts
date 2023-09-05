@@ -2,11 +2,13 @@ import {CollectionConfig} from "payload/types";
 import {hasAccessOrPublished} from "../access/hasAccessOrPublished";
 import {isStudioGraphic} from "../access/isStudioGraphic";
 import {isAdmin} from "../access/isAdmin";
+import textBlock from "../fields/textBlock";
 
 
 const StudioGraphic: CollectionConfig = {
-    slug: 'studio-graphic',
+    slug: 'studioGraphic',
     admin: {
+        useAsTitle: "titleNL",
         description: "collection of outputs from studio graphic"
     },
     access: {
@@ -29,6 +31,7 @@ const StudioGraphic: CollectionConfig = {
             type: "text",
             required: true
         },
+        textBlock,
         {
             name: "mainMedia",
             label: "main media",
