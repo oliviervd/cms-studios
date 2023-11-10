@@ -59,7 +59,7 @@ const Media: CollectionConfig = {
             name: 'project',
             type: 'text',
             admin: {
-                description: "if relevant add the project to wich the media relates."
+                description: "if relevant add the project to which the media relates."
             },
         },
         postCategory,

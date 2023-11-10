@@ -2,23 +2,23 @@ import {Field} from "payload/types";
 
 const textBlock: Field = {
     name: "textBlock",
-    label: "text block",
+    label: "description",
     type: "group",
     fields: [
         {
-            name: 'introductionNl',
-            label: 'Introduction (DUTCH)',
+            name: 'descriptionNL',
+            label: 'description (DUTCH)',
             type: 'richText',
             required: true
         },
         {
-            name: 'introductionEn',
-            label: 'Introduction (ENGLISH)',
+            name: 'descriptionEN',
+            label: 'description (ENGLISH)',
             type: 'richText'
         },
         {
-            name: 'introductionFr',
-            label: 'Introduction (FRENCH)',
+            name: 'descriptionFr',
+            label: 'description (FRENCH)',
             type: 'richText'
         }
     ]
