@@ -6,6 +6,12 @@ const StudioGraphicMembers: CollectionConfig = {
     useAsTitle: "fullName",
     group: "Studio Grafisch Ontwerp",
   },
+  access: {
+    read: () => true,
+    update: () => true,
+    delete: () => true,
+    create: () => true,
+  },
   fields: [
     {
       name: "fullName",

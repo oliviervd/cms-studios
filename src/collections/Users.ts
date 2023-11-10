@@ -1,36 +1,36 @@
-import { CollectionConfig } from 'payload/types';
-import {isAdmin, isAdminFieldLevel} from "../access/isAdmin";
-import {isAdminOrSelf} from "../access/isAdminOrSelf";
+import { CollectionConfig } from "payload/types";
+import { isAdmin, isAdminFieldLevel } from "../access/isAdmin";
+import { isAdminOrSelf } from "../access/isAdminOrSelf";
 
 //todo: add user-collection for (favorite indexes, favorite objects, favorite exhibitions, favorite artists.)
 
 const Users: CollectionConfig = {
-  slug: 'users',
+  slug: "users",
   auth: {
-    useAPIKey: true
+    useAPIKey: true,
   },
   admin: {
-    useAsTitle: 'email',
+    useAsTitle: "email",
   },
   access: {
     create: isAdmin,
     read: isAdminOrSelf,
     update: isAdminOrSelf,
-    delete: isAdmin
+    delete: isAdmin,
   },
   fields: [
     {
-      type: 'row',
+      type: "row",
       fields: [
         {
-          name: 'firstName',
-          type: 'text'
+          name: "firstName",
+          type: "text",
         },
         {
-          name: 'lastName',
-          type: 'text'
-        }
-      ]
+          name: "lastName",
+          type: "text",
+        },
+      ],
     },
     {
       name: "roles",
@@ -45,23 +45,24 @@ const Users: CollectionConfig = {
       options: [
         {
           label: "Admin",
-          value: "admin"
+          value: "admin",
         },
         {
           label: "Editor",
-          value: "editor"
+          value: "editor",
         },
         {
           label: "User",
-          value: "user"
+          value: "user",
         },
         {
-          label: "Studio Graphic",
-          value: "studio-graphic"
-        }
-      ]
-    }
+          label: "Studio Grafisch Ontwerp",
+          value: "member-studio-grafisch-ontwerp",
+        },
+      ],
+    },
   ],
 };
 
 export default Users;
+
