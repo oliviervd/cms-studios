@@ -17,7 +17,7 @@ const StudioGraphicOutput: CollectionConfig = {
       name: "type",
       label: "type",
       type: "relationship",
-      relationTo: "outputType",
+      relationTo: "output type",
     },
   ],
 };
