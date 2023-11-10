@@ -21,6 +21,14 @@ const StudioGraphicOutput: CollectionConfig = {
       type: "text",
     },
     {
+      name: "designer",
+      label: "designer(s)",
+      required: true,
+      type: "relationship",
+      relationTo: "members",
+      hasMany: true,
+    },
+    {
       name: "info",
       type: "group",
       fields: [
@@ -46,6 +54,14 @@ const StudioGraphicOutput: CollectionConfig = {
       label: "media (main)",
       type: "relationship",
       relationTo: "media",
+      required: true,
+    },
+    {
+      name: "extraMedia",
+      label: "media (extra)",
+      type: "relationship",
+      relationTo: "media",
+      hasMany: true,
     },
   ],
 };
