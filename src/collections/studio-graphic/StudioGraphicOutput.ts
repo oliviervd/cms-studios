@@ -56,13 +56,6 @@ const StudioGraphicOutput: CollectionConfig = {
       relationTo: "media",
       required: true,
     },
-    {
-      name: "extraMedia",
-      label: "media (extra)",
-      type: "relationship",
-      relationTo: "media",
-      hasMany: true,
-    },
   ],
 };
 
