@@ -4,7 +4,7 @@ const StudioGraphicMembers: CollectionConfig = {
   slug: "members",
   admin: {
     useAsTitle: "fullName",
-    group: "Studio Graphic",
+    group: "Studio Grafisch Ontwerp",
   },
   fields: [
     {
