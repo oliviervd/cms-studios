@@ -1,6 +1,9 @@
 import { buildConfig } from "payload/config";
 import { cloudStorage } from "@payloadcms/plugin-cloud-storage";
 import { s3Adapter } from "@payloadcms/plugin-cloud-storage/s3";
+import { webpackBundler } from "@payloadcms/bundler-webpack";
+import { slateEditor } from "@payloadcms/richtext-slate";
+import { mongooseAdapter } from "@payloadcms/db-mongodb";
 
 import path from "path";
 import Users from "./collections/Users";
@@ -17,6 +20,11 @@ import StudioGraphicMembers from "./collections/studio-graphic/StudioGraphicMemb
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
+  admin: {
+    user: Users.slug,
+    bundler: webpackBundler(),
+  },
+  editor: slateEditor({}),
   plugins: [
     cloudStorage({
       collections: {
@@ -36,6 +44,9 @@ export default buildConfig({
       },
     }),
   ],
+  db: mongooseAdapter({
+    url: process.env.MONGODB_URI,
+  }),
   cors: [
     "https://dmg-programstudios.vercel.app",
     "http://localhost:3000",
@@ -48,9 +59,6 @@ export default buildConfig({
     "https://p01--admin-cms--qbt6mytl828m.code.run/",
     "vitals.vercel-insights.com",
   ],
-  admin: {
-    user: Users.slug,
-  },
   collections: [
     // add new collections here.
     Users,
