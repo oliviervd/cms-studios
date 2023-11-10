@@ -1,11 +1,18 @@
 import { CollectionConfig } from "payload/types";
 
 const StudioGraphicOutput: CollectionConfig = {
-  slug: "graphic design output",
+  slug: "graphicDesignOtput",
   admin: {
     group: "Studio Grafisch Ontwerp",
     useAsTitle: "title",
   },
+  access: {
+    read: () => true,
+    update: () => true,
+    delete: () => true,
+    create: () => true,
+  },
+
   fields: [
     {
       name: "title",
@@ -21,7 +28,7 @@ const StudioGraphicOutput: CollectionConfig = {
           name: "type",
           label: "type",
           type: "relationship",
-          relationTo: "output type",
+          relationTo: "outputType",
         },
         {
           name: "datePublished",
