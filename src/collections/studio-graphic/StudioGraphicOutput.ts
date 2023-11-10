@@ -1,7 +1,7 @@
 import { CollectionConfig } from "payload/types";
 
 const StudioGraphicOutput: CollectionConfig = {
-  slug: "graphicDesignOtput",
+  slug: "graphicDesignOutput",
   admin: {
     group: "Studio Grafisch Ontwerp",
     useAsTitle: "title",
