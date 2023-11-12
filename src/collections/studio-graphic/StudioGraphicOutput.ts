@@ -50,11 +50,16 @@ const StudioGraphicOutput: CollectionConfig = {
       ],
     },
     {
-      name: "mainMedia",
-      label: "media (main)",
-      type: "relationship",
-      relationTo: "media",
-      required: true,
+      name: "gallery",
+      type: "array",
+      fields: [
+        {
+          name: "image",
+          type: "upload",
+          relationTo: "media",
+          required: true,
+        },
+      ],
     },
   ],
 };
