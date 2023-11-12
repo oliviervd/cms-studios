@@ -42,6 +42,7 @@ const StudioGraphicOutput: CollectionConfig = {
           name: "datePublished",
           label: "production date",
           type: "date",
+          required: true,
           admin: {
             description:
               "date when the output was published/produced. Used to sort on the front end",
@@ -50,14 +51,28 @@ const StudioGraphicOutput: CollectionConfig = {
       ],
     },
     {
+      name: "mainMedia",
+      type: "upload",
+      label: "main media",
+      relationTo: "media",
+      required: true,
+      admin: {
+        description:
+          "main media of the output. If you want more images to support, add them in the gallery below.",
+      },
+    },
+    {
       name: "gallery",
       type: "array",
+      admin: {
+        description: "gallery to add extra media.",
+      },
       fields: [
         {
           name: "image",
           type: "upload",
           relationTo: "media",
-          required: true,
+          required: false,
         },
       ],
     },
