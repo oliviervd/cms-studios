@@ -11,6 +11,7 @@ const Users: CollectionConfig = {
   },
   admin: {
     useAsTitle: "email",
+    group: "globals",
   },
   access: {
     create: isAdmin,
@@ -65,4 +66,3 @@ const Users: CollectionConfig = {
 };
 
 export default Users;
-
