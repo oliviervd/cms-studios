@@ -1,11 +1,12 @@
 import { CollectionConfig } from "payload/types";
 
 const StudioGraphicOutputType: CollectionConfig = {
-  slug: "outputType",
+  slug: "output",
   admin: {
     group: "Studio Grafisch Ontwerp",
     useAsTitle: "type",
-    description: "types used to classify output produced by the studio",
+    description:
+      "types used to classify (poster, billboard, coffeemug) output produced by the studio",
   },
   access: {
     read: () => true,
@@ -15,14 +16,6 @@ const StudioGraphicOutputType: CollectionConfig = {
     {
       name: "type",
       type: "text",
-    },
-    {
-      name: "dimensions",
-      type: "group",
-      fields: [
-        { name: "height", type: "number" },
-        { name: "width", type: "number" },
-      ],
     },
   ],
 };
