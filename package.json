@@ -37,5 +37,6 @@
     "nodemon": "^2.0.6",
     "ts-node": "^9.1.1",
     "typescript": "^5.0.4"
-  }
+  },
+  "proxy": "https://p01--admin-cms--qbt6mytl828m.code.run/"
 }
