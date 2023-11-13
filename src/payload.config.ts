@@ -17,6 +17,7 @@ import StudioGraphic from "./collections/StudioGraphic";
 import StudioGraphicOutput from "./collections/studio-graphic/StudioGraphicOutput";
 import StudioGraphicOutputType from "./collections/studio-graphic/StudioGraphicOutputTypes";
 import StudioGraphicMembers from "./collections/studio-graphic/StudioGraphicMembers";
+import StudioGraphicAbout from "./collections/studio-graphic/StudioGraphicAbout";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
@@ -69,6 +70,7 @@ export default buildConfig({
     StudioGraphicOutput,
     StudioGraphicOutputType,
     StudioGraphicMembers,
+    StudioGraphicAbout,
     Categories,
     Agents,
     Media,

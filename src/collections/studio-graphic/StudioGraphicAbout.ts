@@ -9,6 +9,9 @@ const StudioGraphicAbout: CollectionConfig = {
     update: () => true,
     delete: isAdmin,
   },
+  admin: {
+    group: "Studio Grafisch Ontwerp",
+  },
   fields: [
     {
       name: "aboutNL",
