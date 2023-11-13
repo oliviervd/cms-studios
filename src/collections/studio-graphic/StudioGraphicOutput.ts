@@ -33,59 +33,88 @@ const StudioGraphicOutput: CollectionConfig = {
       type: "group",
       fields: [
         {
-          name: "type",
-          label: "type",
-          type: "relationship",
-          admin: {
-            description:
-              "assign type of the output (poster, billboard, mug, ... )",
-          },
-          relationTo: "outputType",
-        },
-        {
-          name: "printFormat",
-          label: "print format",
-          admin: {
-            description: "assign print format (if relevant)",
-          },
-          required: false,
-          type: "select",
-          options: [
+          type: "row",
+          fields: [
             {
-              label: "A0",
-              value: "A0",
+              name: "type",
+              label: "type",
+              type: "relationship",
+              admin: {
+                description:
+                  "assign type of the output (poster, billboard, mug, ... )",
+              },
+              relationTo: "outputType",
             },
             {
-              label: "A1",
-              value: "A1",
+              name: "printFormat",
+              label: "print format",
+              admin: {
+                description: "assign print format (if relevant)",
+              },
+              required: false,
+              type: "select",
+              options: [
+                {
+                  label: "A0",
+                  value: "A0",
+                },
+                {
+                  label: "A1",
+                  value: "A1",
+                },
+                {
+                  label: "A2",
+                  value: "A2",
+                },
+                {
+                  label: "A3",
+                  value: "A3",
+                },
+                {
+                  label: "A4",
+                  value: "A4",
+                },
+                {
+                  label: "A5",
+                  value: "A5",
+                },
+              ],
             },
             {
-              label: "A2",
-              value: "A2",
-            },
-            {
-              label: "A3",
-              value: "A3",
-            },
-            {
-              label: "A4",
-              value: "A4",
-            },
-            {
-              label: "A5",
-              value: "A5",
+              name: "datePublished",
+              label: "production date",
+              type: "date",
+              required: true,
+              admin: {
+                description:
+                  "date when the output was published/produced. Used to sort on the front end",
+              },
             },
           ],
         },
         {
-          name: "datePublished",
-          label: "production date",
-          type: "date",
-          required: true,
-          admin: {
-            description:
-              "date when the output was published/produced. Used to sort on the front end",
-          },
+          type: "row",
+          fields: [
+            {
+              name: "width",
+              label: "width",
+              type: "text",
+            },
+            {
+              name: "height",
+              label: "height",
+              type: "text",
+            },
+            {
+              name: "series",
+              label: "series",
+              type: "checkbox",
+              admin: {
+                description:
+                  "check if this work is part of a series, leave unchecked it its a single output",
+              },
+            },
+          ],
         },
       ],
     },
