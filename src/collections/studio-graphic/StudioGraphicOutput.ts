@@ -98,12 +98,14 @@ const StudioGraphicOutput: CollectionConfig = {
             {
               name: "width",
               label: "width",
-              type: "text",
+              type: "number",
+              admin: { description: "width in cm" },
             },
             {
               name: "height",
               label: "height",
-              type: "text",
+              type: "number",
+              admin: { description: "height in cm" },
             },
             {
               name: "series",
