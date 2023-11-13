@@ -8,6 +8,9 @@ import contentStatus from "../fields/contentStatus";
 
 const Media: CollectionConfig = {
   slug: "media",
+  admin: {
+    group: "globals",
+  },
   upload: {
     staticDir: path.resolve(__dirname, "../../media"),
     staticURL: "/media",
@@ -68,4 +71,3 @@ const Media: CollectionConfig = {
 };
 
 export default Media;
-
