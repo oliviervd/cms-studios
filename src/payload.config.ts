@@ -54,6 +54,7 @@ export default buildConfig({
     "https://p01--admin-cms--qbt6mytl828m.code.run/",
     "vitals.vercel-insights.com",
     "https://dmg-studio-grafisch-ontwerp.vercel.app/", // Vercel for Studio Grafisch Ontwerp
+    "https://studio-grafisch-ontwerp-ym63.vercel.app/",
   ],
   csrf: [
     "https://dmg-programstudios.vercel.app",
@@ -61,6 +62,7 @@ export default buildConfig({
     "https://p01--admin-cms--qbt6mytl828m.code.run/",
     "vitals.vercel-insights.com",
     "https://dmg-studio-grafisch-ontwerp.vercel.app/", // vercel for Studio Grafisch Ontwerp
+    "https://studio-grafisch-ontwerp-ym63.vercel.app/",
   ],
   collections: [
     // add new collections here.
