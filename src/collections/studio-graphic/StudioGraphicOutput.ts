@@ -78,6 +78,10 @@ const StudioGraphicOutput: CollectionConfig = {
                   label: "A5",
                   value: "A5",
                 },
+                {
+                  label: "A6",
+                  value: "A6",
+                },
               ],
             },
             {
