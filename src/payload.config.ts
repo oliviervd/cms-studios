@@ -53,7 +53,7 @@ export default buildConfig({
     "http://localhost:3000",
     "https://p01--admin-cms--qbt6mytl828m.code.run/",
     "vitals.vercel-insights.com",
-    "https://de-grafische-studio.vercel.app/", // Vercel for Studio Grafisch Ontwerp
+    "https://de-grafische-studio.vercel.app", // Vercel for Studio Grafisch Ontwerp
   ],
   csrf: [
     "https://dmg-programstudios.vercel.app",
