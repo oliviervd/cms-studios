@@ -74,7 +74,7 @@ export default buildConfig({
     StudioGraphicOutput,
     StudioGraphicOutputType,
     StudioGraphicMembers,
-    StudioGraphicAbout,
+    //StudioGraphicAbout,
     //Categories,
     //Agents,
     Media,
