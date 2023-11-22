@@ -29,6 +29,16 @@ const StudioGraphicOutput: CollectionConfig = {
       hasMany: true,
     },
     {
+      name: "status",
+      label: "status",
+      type: "checkbox",
+      admin: {
+        description:
+          "check this box if this output can be published on the website, uncheck to remove.",
+        position: "sidebar",
+      },
+    },
+    {
       name: "info",
       type: "group",
       fields: [
