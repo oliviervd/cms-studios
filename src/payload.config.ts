@@ -53,16 +53,14 @@ export default buildConfig({
     "http://localhost:3000",
     "https://p01--admin-cms--qbt6mytl828m.code.run/",
     "vitals.vercel-insights.com",
-    "https://dmg-studio-grafisch-ontwerp.vercel.app/", // Vercel for Studio Grafisch Ontwerp
-    "https://studio-grafisch-ontwerp-ym63.vercel.app",
+    "https://de-grafische-studio.vercel.app/", // Vercel for Studio Grafisch Ontwerp
   ],
   csrf: [
     "https://dmg-programstudios.vercel.app",
     "http://localhost:3000",
     "https://p01--admin-cms--qbt6mytl828m.code.run/",
     "vitals.vercel-insights.com",
-    "https://dmg-studio-grafisch-ontwerp.vercel.app/", // vercel for Studio Grafisch Ontwerp
-    "https://studio-grafisch-ontwerp-ym63.vercel.app",
+    "https://de-grafische-studio.vercel.app", // vercel for Studio Grafisch Ontwerp
   ],
   collections: [
     // add new collections here.
