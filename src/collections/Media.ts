@@ -66,7 +66,6 @@ const Media: CollectionConfig = {
       },
     },
     postCategory,
-    contentStatus,
   ],
 };
 
