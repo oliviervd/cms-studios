@@ -39,6 +39,15 @@ const StudioGraphicOutput: CollectionConfig = {
       },
     },
     {
+      name: "uri",
+      label: "uri",
+      type: "text",
+      required: true,
+      admin: {
+        description: "string used to construct URL",
+      },
+    },
+    {
       name: "info",
       type: "group",
       fields: [
