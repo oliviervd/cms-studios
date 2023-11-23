@@ -43,6 +43,7 @@ const StudioGraphicOutput: CollectionConfig = {
       label: "uri",
       type: "text",
       required: true,
+      unique: true,
       admin: {
         description: "string used to construct URL",
       },
