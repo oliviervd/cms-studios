@@ -8,16 +8,10 @@ import { mongooseAdapter } from "@payloadcms/db-mongodb";
 import path from "path";
 import Users from "./collections/Users";
 import Studios from "./collections/Studios";
-import Agents from "./collections/Agents";
-import StudioPost from "./collections/StudioPost";
-import studioEvent from "./collections/StudioEvent";
-import Categories from "./collections/Categories";
 import Media from "./collections/Media";
-import StudioGraphic from "./collections/StudioGraphic";
 import StudioGraphicOutput from "./collections/studio-graphic/StudioGraphicOutput";
 import StudioGraphicOutputType from "./collections/studio-graphic/StudioGraphicOutputTypes";
 import StudioGraphicMembers from "./collections/studio-graphic/StudioGraphicMembers";
-import StudioGraphicAbout from "./collections/studio-graphic/StudioGraphicAbout";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
@@ -48,6 +42,9 @@ export default buildConfig({
   db: mongooseAdapter({
     url: process.env.MONGODB_URI,
   }),
+  rateLimit: {
+    max: 5000,
+  },
   cors: [
     "https://dmg-programstudios.vercel.app",
     "http://localhost:3000",
