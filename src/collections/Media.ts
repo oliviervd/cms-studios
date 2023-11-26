@@ -6,6 +6,7 @@ import { hasAccessOrPublished } from "../access/hasAccessOrPublished";
 import postCategory from "../fields/postCategory";
 import contentStatus from "../fields/contentStatus";
 
+// media collection (storing images on S3)
 const Media: CollectionConfig = {
   slug: "media",
   admin: {
