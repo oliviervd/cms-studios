@@ -35,6 +35,11 @@ export default buildConfig({
             },
             bucket: process.env.S3_BUCKET,
           }),
+          generateFileURL: ({ filename, prefix }) => {
+            return ["https://d2yoaaok6mt608.cloudfront.net", prefix, filename]
+              .filter(Boolean)
+              .join("/");
+          },
         },
       },
     }),
