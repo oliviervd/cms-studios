@@ -77,6 +77,25 @@ export default buildConfig({
     StudioDigitalText,
     Media,
   ],
+  localization: {
+    locales: [
+        {
+        label: {
+          en: 'English',
+          nl: 'Engels'
+        },
+        code: 'en'
+      },
+      {
+        label: {
+          en: "Dutch",
+          nl: "Nederlands"
+        },
+        code: "nl"
+      }],
+    defaultLocale: 'en',
+    fallback:true
+  },
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),
   },
