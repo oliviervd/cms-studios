@@ -12,6 +12,7 @@ import Media from "./collections/Media";
 import StudioGraphicOutput from "./collections/studio-graphic/StudioGraphicOutput";
 import StudioGraphicOutputType from "./collections/studio-graphic/StudioGraphicOutputTypes";
 import StudioGraphicMembers from "./collections/studio-graphic/StudioGraphicMembers";
+import StudioDigitalText from "./collections/studio-digital/StudioDigitalText";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
@@ -68,15 +69,12 @@ export default buildConfig({
     // add new collections here.
     Users,
     Studios,
-    //StudioPost,
-    //studioEvent,
-    //StudioGraphic,
+    // studio graphic
     StudioGraphicOutput,
     StudioGraphicOutputType,
     StudioGraphicMembers,
-    //StudioGraphicAbout,
-    //Categories,
-    //Agents,
+    // studio digitaal
+    StudioDigitalText,
     Media,
   ],
   typescript: {
