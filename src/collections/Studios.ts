@@ -29,6 +29,16 @@ const Studios: CollectionConfig = {
       type: "text",
       required: true,
     },
+    {
+      name: "title",
+      type: "text",
+      localized: true
+    },
+    {
+      name: "description",
+      type: "richText",
+      localized: true
+    },
     //todo: make group.
     {
       name: "EN",
