@@ -14,14 +14,10 @@ const StudioDigitalText: CollectionConfig = {
     },
     fields : [
         {
-            name: "textNL",
-            label: "text NL",
+            name: "content",
+            label: "content",
             type: "richText",
-        },
-        {
-            name: "textEN",
-            label: "text EN",
-            type: "richText"
+            localized: true
         }
     ]
 }
