@@ -7,7 +7,7 @@ export const roles: Access<any, User> = ({ req: { user } }) => {
   return Boolean(user?.roles?.includes("member-studio-grafisch-ontwerp"));
 };
 
-export const isStudioDigital: Access<any, User> = ({ reg: {user}}) => {
+export const isStudioDigital: Access<any, User> = ({ req: {user}}) => {
   return Boolean(user?.roles?.includes("member-studio-digitaal"))
 }
 
