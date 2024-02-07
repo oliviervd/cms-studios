@@ -1,7 +1,6 @@
 import {CollectionConfig} from "payload/types";
 import {hasAccessOrPublished} from "../access/hasAccessOrPublished";
-import {isEditor} from "../access/isEditor";
-import {isAdmin} from "../access/isAdmin";
+import {isAdmin, isEditor} from "../access/roles";
 import Titles from "../fields/titles";
 import textBlock from "../fields/textBlock";
 import contentStatus from "../fields/contentStatus";

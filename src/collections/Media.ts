@@ -1,10 +1,7 @@
 import { CollectionConfig } from "payload/types";
 import path from "path";
-import { isEditor } from "../access/isEditor";
-import { isAdmin } from "../access/isAdmin";
-import { hasAccessOrPublished } from "../access/hasAccessOrPublished";
+import { isAdmin, isEditor } from "../access/roles";
 import postCategory from "../fields/postCategory";
-import contentStatus from "../fields/contentStatus";
 
 // media collection (storing images on S3)
 const Media: CollectionConfig = {

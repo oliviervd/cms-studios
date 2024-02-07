@@ -1,5 +1,5 @@
 import {CollectionConfig} from "payload/types";
-import {isAdmin} from "../../access/isAdmin";
+import {isAdmin} from "../../access/roles";
 
 const StudioDigitalText: CollectionConfig = {
     slug:"StudioDigitalText",

@@ -1,8 +1,7 @@
 import { CollectionConfig } from "payload/types";
 import textBlock from "../fields/textBlock";
 import postCategory from "../fields/postCategory";
-import { isAdmin } from "../access/isAdmin";
-import { isEditor } from "../access/isEditor";
+import { isAdmin, isEditor } from "../access/roles";
 import { hasAccessOrPublished } from "../access/hasAccessOrPublished";
 import publishedOn from "../fields/publishedOn";
 import contentStatus from "../fields/contentStatus";
