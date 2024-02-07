@@ -59,6 +59,10 @@ const Users: CollectionConfig = {
           label: "Studio Grafisch Ontwerp",
           value: "member-studio-grafisch-ontwerp",
         },
+        {
+          label: "Studio Digitaal",
+          value: "member-studio-digitaal"
+        }
       ],
     },
   ],
