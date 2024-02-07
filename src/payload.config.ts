@@ -13,6 +13,7 @@ import StudioGraphicOutput from "./collections/studio-graphic/StudioGraphicOutpu
 import StudioGraphicOutputType from "./collections/studio-graphic/StudioGraphicOutputTypes";
 import StudioGraphicMembers from "./collections/studio-graphic/StudioGraphicMembers";
 import StudioDigitalText from "./collections/studio-digital/StudioDigitalText";
+import StudioDigitalProjects from "./collections/studio-digital/StudioDigitalProjects";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
@@ -75,6 +76,8 @@ export default buildConfig({
     StudioGraphicMembers,
     // studio digitaal
     StudioDigitalText,
+    StudioDigitalProjects,
+    // globals
     Media,
   ],
   localization: {
