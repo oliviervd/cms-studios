@@ -4,7 +4,7 @@ import title from "../../fields/titles";
 const Works:CollectionConfig = {
     slug: "work",
     admin: {
-      group: "Design Fest Gent"
+        group: "Design Fest Gent"
     },
     access: {
         read: () => true,
@@ -14,6 +14,22 @@ const Works:CollectionConfig = {
     },
     fields: [
         title,
+        {
+            name: "year",
+            type: "date",
+            admin: {
+                description: {
+                    en: "add the year when the work is created",
+                    fr: "ajouter l'année de création de l'œuvre",
+                    nl: "voeg hier het jaar van vervaardiging toe"
+                }
+            },
+            label: {
+                en: "year",
+                nl: "jaar",
+                fr: "date"
+            }
+        },
         {
             name: "author",
             label: {
