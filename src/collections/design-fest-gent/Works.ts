@@ -13,7 +13,24 @@ const Works:CollectionConfig = {
         create: () => true,
     },
     fields: [
-        title
+        title,
+        {
+            name: "author",
+            label: {
+                en: "author",
+                nl: "auteur",
+                fr: "auteur"
+            },
+            admin: {
+                description: {
+                    en: "if relevant, add author(s) of the cited work here.",
+                    nl: "indien relevant, voeg hier de auteur(s) van het geciteerde werk toe.",
+                    fr: "le cas échéant, ajouter l'auteur ou les auteurs de l'ouvrage cité ici."
+                }
+            },
+            type: "relationship",
+            relationTo: "agents"
+        }
     ]
 
 }
