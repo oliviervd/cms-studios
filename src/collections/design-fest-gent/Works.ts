@@ -1,5 +1,6 @@
 import {CollectionConfig} from "payload/types";
 import title from "../../fields/titles";
+import agents from "./Agents";
 
 const Works:CollectionConfig = {
     slug: "work",
@@ -45,7 +46,8 @@ const Works:CollectionConfig = {
                 }
             },
             type: "relationship",
-            relationTo: "agents"
+            relationTo: "agents",
+            hasMany: true
         }
     ]
 

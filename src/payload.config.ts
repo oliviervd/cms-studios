@@ -16,6 +16,7 @@ import StudioDigitalText from "./collections/studio-digital/StudioDigitalText";
 import StudioDigitalProjects from "./collections/studio-digital/StudioDigitalProjects";
 import Section from "./collections/design-fest-gent/Section";
 import Works from "./collections/design-fest-gent/Works";
+import Agents from "./collections/design-fest-gent/Agents";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
@@ -41,8 +42,8 @@ export default buildConfig({
           }),
           generateFileURL: ({ filename, prefix }) => {
             return ["https://d2yoaaok6mt608.cloudfront.net", prefix, filename]
-              .filter(Boolean)
-              .join("/");
+                .filter(Boolean)
+                .join("/");
           },
         },
       },
@@ -83,13 +84,14 @@ export default buildConfig({
     StudioDigitalProjects,
     // Design Fest Gent
     Section,
-      Works,
+    Works,
+    Agents,
     // globals
     Media,
   ],
   localization: {
     locales: [
-        {
+      {
         label: {
           en: 'English',
           nl: 'Engels',
