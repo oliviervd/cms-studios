@@ -14,6 +14,7 @@ import StudioGraphicOutputType from "./collections/studio-graphic/StudioGraphicO
 import StudioGraphicMembers from "./collections/studio-graphic/StudioGraphicMembers";
 import StudioDigitalText from "./collections/studio-digital/StudioDigitalText";
 import StudioDigitalProjects from "./collections/studio-digital/StudioDigitalProjects";
+import Section from "./collections/design-fest-gent/section";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
@@ -79,6 +80,8 @@ export default buildConfig({
     // studio digitaal
     StudioDigitalText,
     StudioDigitalProjects,
+    // Design Fest Gent
+    Section,
     // globals
     Media,
   ],
