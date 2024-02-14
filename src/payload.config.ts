@@ -87,14 +87,24 @@ export default buildConfig({
         {
         label: {
           en: 'English',
-          nl: 'Engels'
+          nl: 'Engels',
+          fr: 'Anglais'
         },
         code: 'en'
       },
       {
         label: {
+          en: 'French',
+          nl: 'Frans',
+          fr: 'Francais'
+        },
+        code: 'fr'
+      },
+      {
+        label: {
           en: "Dutch",
-          nl: "Nederlands"
+          nl: "Nederlands",
+          fr: "Neerlandais"
         },
         code: "nl"
       }],
