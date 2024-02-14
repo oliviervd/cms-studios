@@ -3,6 +3,9 @@ import title from "../../fields/titles";
 
 const Works:CollectionConfig = {
     slug: "work",
+    admin: {
+      group: "Design Fest Gent"
+    },
     access: {
         read: () => true,
         update: () => true,
