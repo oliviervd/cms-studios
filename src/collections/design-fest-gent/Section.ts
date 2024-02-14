@@ -1,4 +1,5 @@
 import {CollectionConfig} from "payload/types";
+import title from "../../fields/titles";
 
 const Section:CollectionConfig = {
     slug: "section",
@@ -12,16 +13,7 @@ const Section:CollectionConfig = {
         create: () => true,
     },
     fields: [
-        {
-            name: "title",
-            label: {
-                en: "title",
-                nl: "titel",
-                fr: "titre"
-            },
-            localized: true,
-            type: "text"
-        }
+        title,
     ]
 }
 

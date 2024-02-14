@@ -1,5 +1,5 @@
 import {CollectionConfig} from "payload/types";
-import titles from "../fields/titles";
+import title from "../fields/titles";
 import {hasAccessOrPublished} from "../access/hasAccessOrPublished";
 import {isAdmin, isEditor} from "../access/roles";
 import contentStatus from "../fields/contentStatus";
@@ -24,7 +24,7 @@ const categories: CollectionConfig = {
             type: 'text',
             required: true
         },
-        titles, //dutch and french
+        title, //dutch and french
         {
             type: "row",
             fields: [

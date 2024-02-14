@@ -1,5 +1,5 @@
 import {CollectionConfig} from "payload/types";
-import titles from "../fields/titles";
+import title from "../fields/titles";
 import textBlock from "../fields/textBlock";
 import postCategory from "../fields/postCategory";
 import contentStatus from "../fields/contentStatus";
@@ -28,7 +28,7 @@ const StudioPosts: CollectionConfig = {
             type: 'text',
             required: true
         },
-        titles, //dutch and french
+        title, //dutch and french
         textBlock,
         {
             name: 'author',

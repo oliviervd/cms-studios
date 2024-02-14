@@ -14,7 +14,7 @@ import StudioGraphicOutputType from "./collections/studio-graphic/StudioGraphicO
 import StudioGraphicMembers from "./collections/studio-graphic/StudioGraphicMembers";
 import StudioDigitalText from "./collections/studio-digital/StudioDigitalText";
 import StudioDigitalProjects from "./collections/studio-digital/StudioDigitalProjects";
-import Section from "./collections/design-fest-gent/section";
+import Section from "./collections/design-fest-gent/Section";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
