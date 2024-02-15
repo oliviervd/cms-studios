@@ -10,7 +10,7 @@ const Users: CollectionConfig = {
   },
   admin: {
     useAsTitle: "email",
-    group: "globals",
+    group: "admin",
   },
   access: {
     create: isAdmin,
