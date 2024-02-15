@@ -5,10 +5,11 @@ import setCategory from "../fields/setCategory";
 import contentStatus from "../fields/contentStatus";
 import publishedOn from "../fields/publishedOn";
 
-const StudioEvent: CollectionConfig = {
-    slug: "studioEvent",
+const Event: CollectionConfig = {
+    slug: "event",
     admin: {
-        useAsTitle:"eventTitle"
+        useAsTitle:"eventTitle",
+        group: "globals"
     },
     access: {
         read: hasAccessOrPublished
@@ -21,18 +22,29 @@ const StudioEvent: CollectionConfig = {
             name: "eventTitle",
             label: "title",
             type: "text",
-            required: true
+            required: true,
+            localized: true
         },
         {
             name: "startDate",
             label: "start date",
             type: "date",
-            required: true
+            required: true,
+            admin: {
+                date: {
+                    pickerAppearance: "dayOnly"
+                }
+            }
         },
         {
             name: "endDate",
             label: "end date",
             type: "date",
+            admin: {
+                date: {
+                    pickerAppearance: "dayOnly"
+                }
+            }
         },
         {
             type: "row",
@@ -41,9 +53,8 @@ const StudioEvent: CollectionConfig = {
                 setCategory,
                 contentStatus
             ]
-        },
-        publishedOn
+        }
     ]
 }
 
-export default StudioEvent
+export default Event
