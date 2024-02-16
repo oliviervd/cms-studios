@@ -22,6 +22,10 @@ const postCategory: Field = {
         {
             label: "studio care",
             value: "studioCare"
+        },
+        {
+            label: "Design Fest Gent",
+            value: "designfestgent"
         }
     ]
 }
