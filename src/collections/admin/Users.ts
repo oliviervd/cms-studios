@@ -1,5 +1,5 @@
 import { CollectionConfig } from "payload/types";
-import { isAdmin, isAdminFieldLevel, isAdminOrSelf } from "../access/roles";
+import { isAdmin, isAdminFieldLevel, isAdminOrSelf } from "../../access/roles";
 
 //todo: add user-collection for (favorite indexes, favorite objects, favorite exhibitions, favorite artists.)
 
