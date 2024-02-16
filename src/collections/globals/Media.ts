@@ -1,7 +1,7 @@
 import { CollectionConfig } from "payload/types";
 import path from "path";
-import { isAdmin, isEditor } from "../access/roles";
-import postCategory from "../fields/postCategory";
+import { isAdmin, isEditor } from "../../access/roles";
+import postCategory from "../../fields/postCategory";
 
 // media collection (storing images on S3)
 const Media: CollectionConfig = {

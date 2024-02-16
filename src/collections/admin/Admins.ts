@@ -9,7 +9,6 @@ const Admins: CollectionConfig = {
     access: {
         read: isAdmin,
         update: isAdmin,
-
     },
     fields: [
 
