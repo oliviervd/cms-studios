@@ -26,6 +26,16 @@ const Texts:CollectionConfig = {
             type: "text"
         },
         {
+            name: "slug",
+            label: {
+                en: "summary/slug",
+                nl: "synopsis/slug",
+                fr: "slug"
+            },
+            type:"richText",
+            localized: true,
+        },
+        {
             name: "text",
             label: {
                 en: "text",
