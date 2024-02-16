@@ -18,6 +18,7 @@ import Section from "./collections/design-fest-gent/Section";
 import Works from "./collections/design-fest-gent/Works";
 import Agents from "./collections/design-fest-gent/Agents";
 import Texts from "./collections/design-fest-gent/Text";
+import Navigation from "./collections/globals/Navigation";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
@@ -90,6 +91,7 @@ export default buildConfig({
     Texts,
     // globals
     Media,
+    Navigation
   ],
   localization: {
     locales: [
