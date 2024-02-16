@@ -11,6 +11,11 @@ const Texts:CollectionConfig = {
     },
     fields: [
         {
+            name: "id",
+            type:"text",
+            label: "id",
+        },
+        {
             name:"title",
             label: {
                 en: "title",
