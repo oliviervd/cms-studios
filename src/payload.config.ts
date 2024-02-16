@@ -6,9 +6,9 @@ import { slateEditor } from "@payloadcms/richtext-slate";
 import { mongooseAdapter } from "@payloadcms/db-mongodb";
 
 import path from "path";
-import Users from "./collections/Users";
+import Users from "./collections/admin/Users";
 import Studios from "./collections/Studios";
-import Media from "./collections/Media";
+import Media from "./collections/globals/Media";
 import StudioGraphicOutput from "./collections/studio-graphic/StudioGraphicOutput";
 import StudioGraphicOutputType from "./collections/studio-graphic/StudioGraphicOutputTypes";
 import StudioGraphicMembers from "./collections/studio-graphic/StudioGraphicMembers";
@@ -17,6 +17,7 @@ import StudioDigitalProjects from "./collections/studio-digital/StudioDigitalPro
 import Section from "./collections/design-fest-gent/Section";
 import Works from "./collections/design-fest-gent/Works";
 import Agents from "./collections/design-fest-gent/Agents";
+import Texts from "./collections/design-fest-gent/Text";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
@@ -86,6 +87,7 @@ export default buildConfig({
     Section,
     Works,
     Agents,
+    Texts,
     // globals
     Media,
   ],
