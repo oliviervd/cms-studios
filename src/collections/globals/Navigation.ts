@@ -13,6 +13,11 @@ const Navigation:CollectionConfig = {
     },
     fields: [
         {
+            name: "id",
+            type:"text",
+            label: "id",
+        },
+        {
             name: "label",
             type: "text",
             label: "label",
