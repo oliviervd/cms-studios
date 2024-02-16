@@ -29,6 +29,29 @@ const Texts:CollectionConfig = {
             },
             localized: true,
             type: "richText"
+        },
+        {
+            name: "type",
+            label: "type",
+            type: "select",
+            options: [
+                {
+                    label: {
+                        en: "about",
+                        nl: "over",
+                        fr: "a propos de"
+                    },
+                    value: "about"
+                },
+                {
+                    label: {
+                        en: "article",
+                        nl: "artikel",
+                        fr: "article"
+                    },
+                    value: "article"
+                }
+            ]
         }
     ]
 }
