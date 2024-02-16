@@ -18,6 +18,7 @@ import Section from "./collections/design-fest-gent/Section";
 import Works from "./collections/design-fest-gent/Works";
 import Agents from "./collections/design-fest-gent/Agents";
 import Texts from "./collections/design-fest-gent/Text";
+import Partners from "./collections/design-fest-gent/Partners";
 import Navigation from "./collections/globals/Navigation";
 
 export default buildConfig({
@@ -91,6 +92,7 @@ export default buildConfig({
     Works,
     Agents,
     Texts,
+    Partners,
     // globals
     Media,
     Navigation
