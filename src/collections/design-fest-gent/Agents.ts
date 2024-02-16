@@ -53,6 +53,25 @@ const Agents:CollectionConfig = {
                 fr: "website",
                 nl: "webpagina"
             }
+        },
+        {
+            name: "role",
+            type: "select",
+            hasMany: true,
+            options: [
+                {
+                    value: "coCurator",
+                    label: {
+                        en: "co-curator"
+                    }
+                },
+                {
+                    value: "designer",
+                    label: {
+                        en: "designer"
+                    }
+                }
+            ]
         }
     ]
 }
