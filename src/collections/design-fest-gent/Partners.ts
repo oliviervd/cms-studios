@@ -2,6 +2,9 @@ import {CollectionConfig} from "payload/types";
 
 const Partners:CollectionConfig = {
     slug: "partners",
+    admin: {
+      group: "Design Fest Gent"
+    },
     fields: [
         {
             name: "logo",
