@@ -34,12 +34,42 @@ const StudioDigitalProjects:CollectionConfig = {
         },
         {
             name: "active",
+            admin: {
+                position: "sidebar"
+            },
             label: {
                 "en": "active",
                 "nl": "actief",
                 "fr": "en cours"
             },
             type: "checkbox"
+        },
+        {
+            name: "heroImage",
+            label: {
+                "en": "main image",
+                "nl": "hoofdafbeelding",
+                "fr": "image principale"
+            },
+            type: "relationship",
+            relationTo: "media"
+        },
+        {
+            name: "gallery",
+            label: {
+                "en": "image gallery",
+                "nl": "afbeeldingen gallerij",
+                "fr": "galerie d'images"
+            },
+            type: "array",
+            fields: [
+                {
+                    name: "image",
+                    type: "upload",
+                    relationTo: "media",
+                    required: false,
+                },
+            ]
         }
     ]
 }
