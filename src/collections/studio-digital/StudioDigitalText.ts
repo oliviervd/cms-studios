@@ -12,13 +12,18 @@ const StudioDigitalText: CollectionConfig = {
         delete : isAdmin
     },
     admin: {
-        group: "Studio Digitaal"
+        group: "Studio Digitaal",
+        useAsTitle: "title",
     },
     fields : [
         {
-            name: "content",
-            label: "content",
-            type: "richText",
+            name: "title",
+            label: {
+                "en": "title",
+                "nl": "titel",
+                "fr": "titre"
+            },
+            type: "text",
             localized: true
         },
         {
