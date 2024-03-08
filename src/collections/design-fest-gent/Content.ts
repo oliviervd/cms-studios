@@ -1,7 +1,7 @@
 import {CollectionConfig} from "payload/types";
 
-const Texts:CollectionConfig = {
-    slug:"texts",
+const Content:CollectionConfig = {
+    slug:"content",
     admin: {group: "Design Fest Gent"},
     access : {
         read: () => true,
@@ -70,4 +70,4 @@ const Texts:CollectionConfig = {
         }
     ]
 }
-export default Texts
+export default Content

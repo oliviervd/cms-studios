@@ -17,7 +17,7 @@ import StudioDigitalProjects from "./collections/studio-digital/StudioDigitalPro
 import Section from "./collections/design-fest-gent/Section";
 import Works from "./collections/design-fest-gent/Works";
 import Agents from "./collections/design-fest-gent/Agents";
-import Texts from "./collections/design-fest-gent/Text";
+import Content from "./collections/design-fest-gent/Content";
 import Partners from "./collections/design-fest-gent/Partners";
 import Navigation from "./collections/globals/Navigation";
 
@@ -91,7 +91,7 @@ export default buildConfig({
     Section,
     Works,
     Agents,
-    Texts,
+    Content,
     Partners,
     // globals
     Media,
