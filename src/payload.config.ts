@@ -20,6 +20,7 @@ import Agents from "./collections/design-fest-gent/Agents";
 import Content from "./collections/design-fest-gent/Content";
 import Partners from "./collections/design-fest-gent/Partners";
 import Navigation from "./collections/globals/Navigation";
+import Globals from "./collections/design-fest-gent/Globals";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
@@ -91,6 +92,7 @@ export default buildConfig({
     Section,
     Works,
     Agents,
+    Globals,
     Content,
     Partners,
     // globals
