@@ -1,7 +1,7 @@
 import {CollectionConfig} from "payload/types";
 import {isAdmin} from "../../access/roles";
-import CodeCell from "payload/dist/admin/components/views/collections/List/Cell/field-types/Code";
 import CodeSnippet from "../../blocks/Code";
+import MainTitleBlock from "../../blocks/Title";
 
 const StudioDigitalText: CollectionConfig = {
     slug:"StudioDigitalText",
@@ -27,7 +27,8 @@ const StudioDigitalText: CollectionConfig = {
             minRows: 1,
             maxRows: 20,
             blocks: [
-                // required
+                CodeSnippet,
+                MainTitleBlock
             ],
         },
 
