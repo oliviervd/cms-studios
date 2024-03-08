@@ -2,7 +2,7 @@ import {Block} from "payload/types";
 
 const CodeSnippet:Block = {
     slug: "codeSnippet",
-    interfaceName: "code snippet",
+    interfaceName: "codeSnippet",
     fields: [
         {
             name: "snippet",
