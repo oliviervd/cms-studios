@@ -12,7 +12,7 @@ import Media from "./collections/globals/Media";
 import StudioGraphicOutput from "./collections/studio-graphic/StudioGraphicOutput";
 import StudioGraphicOutputType from "./collections/studio-graphic/StudioGraphicOutputTypes";
 import StudioGraphicMembers from "./collections/studio-graphic/StudioGraphicMembers";
-import StudioDigitalText from "./collections/studio-digital/StudioDigitalText";
+import ApiDoc from "./collections/studio-digital/ApiDocs";
 import StudioDigitalProjects from "./collections/studio-digital/StudioDigitalProjects";
 import Section from "./collections/design-fest-gent/Section";
 import Works from "./collections/design-fest-gent/Works";
@@ -86,8 +86,8 @@ export default buildConfig({
     StudioGraphicOutputType,
     StudioGraphicMembers,
     // studio digitaal
-    StudioDigitalText,
     StudioDigitalProjects,
+    ApiDoc,
     // Design Fest Gent
     Section,
     Works,
