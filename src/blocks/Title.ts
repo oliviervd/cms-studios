@@ -2,7 +2,7 @@ import {Block} from "payload/types";
 
 const MainTitleBlock: Block = {
     slug: "textBlock",
-    interfaceName: "text block",
+    interfaceName: "textBlock",
     fields: [
         {
             name: "type",
