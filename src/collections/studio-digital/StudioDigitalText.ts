@@ -3,7 +3,7 @@ import {isAdmin} from "../../access/roles";
 import CodeSnippet from "../../blocks/Code";
 import MainTitleBlock from "../../blocks/Title";
 
-const StudioDigitalText: CollectionConfig = {
+const ApiDoc: CollectionConfig = {
     slug:"StudioDigitalText",
     access: {
         read: () => true,
@@ -40,4 +40,4 @@ const StudioDigitalText: CollectionConfig = {
     ],
 }
 
-export default StudioDigitalText;
+export default ApiDoc;
