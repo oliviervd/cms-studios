@@ -4,7 +4,7 @@ import CodeSnippet from "../../blocks/Code";
 import MainTitleBlock from "../../blocks/Title";
 
 const ApiDoc: CollectionConfig = {
-    slug:"StudioDigitalText",
+    slug:"ApiDoc",
     access: {
         read: () => true,
         create: () => true,
