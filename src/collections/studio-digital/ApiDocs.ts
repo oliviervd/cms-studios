@@ -2,6 +2,7 @@ import {CollectionConfig} from "payload/types";
 import {isAdmin} from "../../access/roles";
 import CodeSnippet from "../../blocks/Code";
 import MainTitleBlock from "../../blocks/Title";
+import richText from "../../blocks/RichText";
 
 const ApiDoc: CollectionConfig = {
     slug:"ApiDoc",
@@ -33,7 +34,8 @@ const ApiDoc: CollectionConfig = {
             maxRows: 20,
             blocks: [
                 CodeSnippet,
-                MainTitleBlock
+                MainTitleBlock,
+                richText
             ],
         },
 
