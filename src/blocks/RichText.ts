@@ -12,7 +12,8 @@ const RichText:Block = {
                 "nl": "rijke tekst"
             },
             type: "richText",
-            required: true
+            required: true,
+            localized:true
         }
     ]
 }

@@ -8,6 +8,7 @@ const CodeSnippet:Block = {
             name: "snippet",
             label: "snippet",
             type: "code",
+            localized:true
         }
     ]
 }
