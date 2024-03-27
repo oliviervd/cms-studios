@@ -45,26 +45,66 @@ const ApiDoc: CollectionConfig = {
                     name: "object",
                     label: "object",
                     fields: [
-
+                        {
+                            name: "layout",
+                            type: "blocks",
+                            minRows: 1,
+                            maxRows:20,
+                            blocks : [
+                                CodeSnippet,
+                                MainTitleBlock,
+                                richText
+                            ]
+                        }
                     ]
                 },{
                     name: "agent",
                     label: "agent",
                     fields: [
-
+                        {
+                            name: "layout",
+                            type: "blocks",
+                            minRows: 1,
+                            maxRows:20,
+                            blocks : [
+                                CodeSnippet,
+                                MainTitleBlock,
+                                richText
+                            ]
+                        }
                     ]
                 },{
                     name: "exhibtion",
                     label: "exhibition",
                     fields: [
-
+                        {
+                            name: "layout",
+                            type: "blocks",
+                            minRows: 1,
+                            maxRows:20,
+                            blocks : [
+                                CodeSnippet,
+                                MainTitleBlock,
+                                richText
+                            ]
+                        }
                     ]
                 },
                 {
                     name: "concept",
                     label: "concept",
                     fields: [
-
+                        {
+                            name: "layout",
+                            type: "blocks",
+                            minRows: 1,
+                            maxRows:20,
+                            blocks : [
+                                CodeSnippet,
+                                MainTitleBlock,
+                                richText
+                            ]
+                        }
                     ]
                 }
             ]
