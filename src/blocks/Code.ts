@@ -5,10 +5,33 @@ const CodeSnippet:Block = {
     interfaceName: "codeSnippet",
     fields: [
         {
-            name: "snippet",
-            label: "snippet",
-            type: "code",
-            localized:true
+          type: "tabs",
+            tabs: [
+                {
+                    name: "Javascript",
+                    label: "Javascript",
+                    fields: [
+                        {
+                            name: "snippet",
+                            label: "snippet",
+                            type: "code",
+                            localized:true
+                        }
+                    ]
+                },
+                {
+                    name: "Python",
+                    label: "Python",
+                    fields: [
+                        {
+                            name: "snippet",
+                            label: "snippet",
+                            type: "code",
+                            localized:true
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
