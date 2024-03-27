@@ -74,7 +74,7 @@ const ApiDoc: CollectionConfig = {
                         }
                     ]
                 },{
-                    name: "exhibtion",
+                    name: "exhibition",
                     label: "exhibition",
                     fields: [
                         {
