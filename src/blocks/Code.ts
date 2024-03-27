@@ -30,6 +30,18 @@ const CodeSnippet:Block = {
                             localized:true
                         }
                     ]
+                },
+                {
+                    name: "Curl",
+                    label: "Curl",
+                    fields: [
+                        {
+                            name: "snippet",
+                            label: "snippet",
+                            type: "code",
+                            localized:true
+                        }
+                    ]
                 }
             ]
         }
