@@ -38,6 +38,37 @@ const ApiDoc: CollectionConfig = {
                 richText
             ],
         },
+        {
+            type: "tabs",
+            tabs: [
+                {
+                    name: "object",
+                    label: "object",
+                    fields: [
+
+                    ]
+                },{
+                    name: "agent",
+                    label: "agent",
+                    fields: [
+
+                    ]
+                },{
+                    name: "exhibtion",
+                    label: "exhibition",
+                    fields: [
+
+                    ]
+                },
+                {
+                    name: "concept",
+                    label: "concept",
+                    fields: [
+
+                    ]
+                }
+            ]
+        }
 
     ],
 }
