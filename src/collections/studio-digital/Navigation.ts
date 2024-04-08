@@ -2,7 +2,7 @@ import {CollectionConfig} from "payload/types";
 import {isAdmin} from "../../access/roles";
 
 const NavigationSD:CollectionConfig = {
-    slug: "navigation",
+    slug: "navigationSD",
     access: {
         read: () => true,
         create: () => true,
