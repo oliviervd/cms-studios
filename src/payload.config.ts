@@ -13,6 +13,7 @@ import StudioGraphicOutput from "./collections/studio-graphic/StudioGraphicOutpu
 import StudioGraphicOutputType from "./collections/studio-graphic/StudioGraphicOutputTypes";
 import StudioGraphicMembers from "./collections/studio-graphic/StudioGraphicMembers";
 import ApiDoc from "./collections/studio-digital/ApiDocs";
+import NavigationSD from "./collections/studio-digital/Navigation"
 import StudioDigitalProjects from "./collections/studio-digital/StudioDigitalProjects";
 import Section from "./collections/design-fest-gent/Section";
 import Works from "./collections/design-fest-gent/Works";
@@ -89,6 +90,7 @@ export default buildConfig({
     // studio digitaal
     StudioDigitalProjects,
     ApiDoc,
+    NavigationSD,
     // Design Fest Gent
     Section,
     Works,
