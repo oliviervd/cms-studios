@@ -9,8 +9,9 @@ const MainTitleBlock: Block = {
             label: "type",
             type: "select",
             options: [
+                "main title",
                 "title",
-                "endpoint"
+                "subtitle"
             ]
         },
         {
