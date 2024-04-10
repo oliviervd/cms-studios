@@ -8,6 +8,18 @@ const CodeSnippet:Block = {
           type: "tabs",
             tabs: [
                 {
+                    name: "URL",
+                    label: "URL",
+                    fields: [
+                        {
+                            name: "snippet",
+                            label: "snippet",
+                            type: "code",
+                            localized:true
+                        }
+                    ]
+                },
+                {
                     name: "Javascript",
                     label: "Javascript",
                     fields: [
