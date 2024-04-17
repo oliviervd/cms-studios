@@ -20,6 +20,18 @@ const CodeSnippet:Block = {
                     ]
                 },
                 {
+                    name: "JSONLD",
+                    label: "JSON-LD",
+                    fields: [
+                        {
+                            name: "snippet",
+                            label: "snippet",
+                            type: "code",
+                            localized:true
+                        }
+                    ]
+                },
+                {
                     name: "Javascript",
                     label: "Javascript",
                     fields: [
