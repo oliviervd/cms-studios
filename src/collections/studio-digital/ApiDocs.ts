@@ -31,7 +31,7 @@ const ApiDoc: CollectionConfig = {
             name: 'layout', // required
             type: 'blocks', // required
             minRows: 1,
-            maxRows: 20,
+            maxRows: 100,
             blocks: [
                 CodeSnippet,
                 MainTitleBlock,
