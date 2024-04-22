@@ -22,7 +22,8 @@ import Content from "./collections/design-fest-gent/Content";
 import Partners from "./collections/design-fest-gent/Partners";
 import Navigation from "./collections/globals/Navigation";
 import Globals from "./collections/design-fest-gent/Globals";
-import Text from "./collections/globals/Text"
+import Text from "./collections/globals/Text";
+import Glossary from "./collections/studio-digital/Glossary";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
@@ -91,6 +92,7 @@ export default buildConfig({
     StudioDigitalProjects,
     ApiDoc,
     NavigationSD,
+    Glossary,
     // Design Fest Gent
     Section,
     Works,
