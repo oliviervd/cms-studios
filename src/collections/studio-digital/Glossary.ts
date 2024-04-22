@@ -3,6 +3,9 @@ import {isAdmin} from "../../access/roles";
 
 const Glossary:CollectionConfig = {
     slug: "glossary",
+    admin: {
+        group: "Studio Digitaal"
+    },
     access: {
         read: () => true,
         create: () => true,
