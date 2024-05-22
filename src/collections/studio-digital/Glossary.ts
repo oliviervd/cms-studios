@@ -28,6 +28,24 @@ const Glossary:CollectionConfig = {
             label: "relates to",
             type: "relationship",
             relationTo:"glossary"
+        },
+        {
+            name: "references",
+            type: "array",
+            label: "references",
+            fields: [
+                {
+                    name: "url",
+                    label: "url",
+                    type: "text"
+                },
+                {
+                    name: "source",
+                    label: "source",
+                    type: "text"
+                }
+            ]
+
         }
     ]
 }
