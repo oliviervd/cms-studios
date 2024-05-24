@@ -24,6 +24,11 @@ const StudioDigitalProjects:CollectionConfig = {
             type: "text"
         },
         {
+            name: "projectBrief",
+            label: "brief description",
+            type: "richText",
+        },
+        {
             name: "projectDescription",
             label: {
                 "en": "description",
