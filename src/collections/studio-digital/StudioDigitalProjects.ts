@@ -10,6 +10,7 @@ const StudioDigitalProjects:CollectionConfig = {
         delete: isAdmin
     },
     admin: {
+        useAsTitle: "projectTitle",
         group: "Studio Digitaal"
     },
     fields:[
