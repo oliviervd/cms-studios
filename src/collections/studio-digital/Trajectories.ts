@@ -5,18 +5,18 @@ const Trajectory:CollectionConfig = {
     fields: [
         // overview (introduction
         {
-            title: "trajectoryTitle",
+            name: "trajectoryTitle",
             label: "title trajectory",
             type: "text",
         },
         {
-            title: "trajetoryDescription",
+            name: "trajetoryDescription",
             label: "description trajectory",
             type: "richText",
         },
         // articles
         {
-            title: "articles",
+            name: "articles",
             label: "articles",
             type: "array",
             fields: [
