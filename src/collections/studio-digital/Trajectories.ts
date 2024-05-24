@@ -20,7 +20,7 @@ const Trajectory:CollectionConfig = {
             type: "text",
         },
         {
-            name: "trajetoryDescription",
+            name: "trajectoryDescription",
             label: "description trajectory",
             type: "richText",
         },
