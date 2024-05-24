@@ -21,12 +21,14 @@ const StudioDigitalProjects:CollectionConfig = {
                 "nl": "titel",
                 "fr": "titre"
             },
-            type: "text"
+            type: "text",
+            localized: true,
         },
         {
             name: "projectBrief",
             label: "brief description",
             type: "richText",
+            localized: true,
         },
         {
             name: "projectDescription",
