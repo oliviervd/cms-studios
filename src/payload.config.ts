@@ -24,6 +24,7 @@ import Navigation from "./collections/globals/Navigation";
 import Globals from "./collections/design-fest-gent/Globals";
 import Text from "./collections/globals/Text";
 import Glossary from "./collections/studio-digital/Glossary";
+import Trajectory from "./collections/studio-digital/Trajectories";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
@@ -93,6 +94,7 @@ export default buildConfig({
     ApiDoc,
     NavigationSD,
     Glossary,
+      Trajectory,
     // Design Fest Gent
     Section,
     Works,
