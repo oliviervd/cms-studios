@@ -18,11 +18,13 @@ const Trajectory:CollectionConfig = {
             name: "trajectoryTitle",
             label: "title trajectory",
             type: "text",
+            localized: true,
         },
         {
             name: "trajectoryDescription",
             label: "description trajectory",
             type: "richText",
+            localized: true,
         },
         // articles
         {
