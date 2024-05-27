@@ -23,7 +23,7 @@ const StudioGraphicOutput: CollectionConfig = {
     },
     {
       label: "description",
-      name: "descriptiion",
+      name: "description",
       type: "richText"
     },
     {
