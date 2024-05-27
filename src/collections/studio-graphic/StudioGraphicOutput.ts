@@ -1,4 +1,5 @@
 import { CollectionConfig } from "payload/types";
+import richText from "../../blocks/RichText";
 
 const StudioGraphicOutput: CollectionConfig = {
   slug: "graphicDesignOutput",
@@ -19,6 +20,11 @@ const StudioGraphicOutput: CollectionConfig = {
       label: "title",
       required: true,
       type: "text",
+    },
+    {
+      label: "description",
+      name: "descriptiion",
+      type: "richText"
     },
     {
       name: "designer",
