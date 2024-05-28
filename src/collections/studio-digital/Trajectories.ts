@@ -23,7 +23,8 @@ const Trajectory:CollectionConfig = {
         {
             name: "trajectorySlug",
             label: "slug",
-            type: "richText"
+            type: "richText",
+            localized: true,
         },
         {
             name: "trajectoryDescription",
