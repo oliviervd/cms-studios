@@ -21,7 +21,8 @@ const Glossary:CollectionConfig = {
         {
             name: "description",
             label: "description",
-            type: "richText"
+            type: "richText",
+            localized:true,
         },
         {
             name: "relatesTo",
