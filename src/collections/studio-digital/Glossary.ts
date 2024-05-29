@@ -47,6 +47,12 @@ const Glossary:CollectionConfig = {
                 }
             ]
 
+        },
+        {
+            name: "media",
+            label: "media",
+            type: "relationship",
+            relationTo: "media"
         }
     ]
 }
