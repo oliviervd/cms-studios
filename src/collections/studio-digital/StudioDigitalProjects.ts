@@ -41,6 +41,19 @@ const StudioDigitalProjects:CollectionConfig = {
             type: "richText"
         },
         {
+            name:"subProjects",
+            label: "Sub projects",
+            type: "array",
+            fields: [
+                {
+                    label: "project",
+                    name: "project",
+                    type: "relationship",
+                    relationTo: "StudioDigitalProject"
+                }
+            ]
+        },
+        {
             name: "active",
             admin: {
                 position: "sidebar"
