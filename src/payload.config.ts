@@ -65,6 +65,7 @@ export default buildConfig({
   },
   cors: [
     "https://dmg-programstudios.vercel.app",
+    "https://digitaal.designmuseumgent.be",
     "http://localhost:3000",
     "https://p01--admin-cms--qbt6mytl828m.code.run/",
     "vitals.vercel-insights.com",
@@ -74,6 +75,7 @@ export default buildConfig({
   ],
   csrf: [
     "https://dmg-programstudios.vercel.app",
+    "https://digitaal.designmuseumgent.be",
     "http://localhost:3000",
     "https://p01--admin-cms--qbt6mytl828m.code.run/",
     "vitals.vercel-insights.com",
