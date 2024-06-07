@@ -40,6 +40,7 @@ const ApiDoc: CollectionConfig = {
         },
         {
             type: "tabs",
+            required: false,
             tabs: [
                 {
                     name: "object",
@@ -106,6 +107,19 @@ const ApiDoc: CollectionConfig = {
                             ]
                         }
                     ]
+                }
+            ]
+        },
+        {
+            name:"subDoc",
+            label: "subDocumentation API",
+            type: "array",
+            fields: [
+                {
+                    label: "subDoc",
+                    name: "subDoc",
+                    type: "relationship",
+                    relationTo: "ApiDoc"
                 }
             ]
         }
