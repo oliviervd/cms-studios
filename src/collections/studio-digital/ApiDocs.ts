@@ -3,6 +3,7 @@ import {isAdmin} from "../../access/roles";
 import CodeSnippet from "../../blocks/Code";
 import MainTitleBlock from "../../blocks/Title";
 import richText from "../../blocks/RichText";
+import APIEndpoints from "../../blocks/APIEndpoints";
 
 const ApiDoc: CollectionConfig = {
     slug:"ApiDoc",
@@ -35,80 +36,9 @@ const ApiDoc: CollectionConfig = {
             blocks: [
                 CodeSnippet,
                 MainTitleBlock,
-                richText
+                richText,
+                APIEndpoints,
             ],
-        },
-        {
-            type: "tabs",
-            required: false,
-            tabs: [
-                {
-                    name: "object",
-                    label: "object",
-                    fields: [
-                        {
-                            name: "layout",
-                            type: "blocks",
-                            minRows: 1,
-                            maxRows:20,
-                            blocks : [
-                                CodeSnippet,
-                                MainTitleBlock,
-                                richText
-                            ]
-                        }
-                    ]
-                },{
-                    name: "agent",
-                    label: "agent",
-                    fields: [
-                        {
-                            name: "layout",
-                            type: "blocks",
-                            minRows: 1,
-                            maxRows:20,
-                            blocks : [
-                                CodeSnippet,
-                                MainTitleBlock,
-                                richText
-                            ]
-                        }
-                    ]
-                },{
-                    name: "exhibition",
-                    label: "exhibition",
-                    fields: [
-                        {
-                            name: "layout",
-                            type: "blocks",
-                            minRows: 1,
-                            maxRows:20,
-                            blocks : [
-                                CodeSnippet,
-                                MainTitleBlock,
-                                richText
-                            ]
-                        }
-                    ]
-                },
-                {
-                    name: "concept",
-                    label: "concept",
-                    fields: [
-                        {
-                            name: "layout",
-                            type: "blocks",
-                            minRows: 1,
-                            maxRows:20,
-                            blocks : [
-                                CodeSnippet,
-                                MainTitleBlock,
-                                richText
-                            ]
-                        }
-                    ]
-                }
-            ]
         },
         {
             name:"subDoc",
