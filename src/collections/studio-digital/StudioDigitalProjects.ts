@@ -27,7 +27,10 @@ const StudioDigitalProjects:CollectionConfig = {
         {
             name: "path",
             label:"path",
-            type: "text"
+            type: "text",
+            admin: {
+                position: "sidebar"
+            }
         },
         {
             name: "projectBrief",

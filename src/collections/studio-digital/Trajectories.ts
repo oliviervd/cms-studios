@@ -21,9 +21,12 @@ const Trajectory:CollectionConfig = {
             localized: true,
         },
         {
-          name: "path",
-          label:"path",
-          type: "text"
+            name: "path",
+            label:"path",
+            type: "text",
+            admin: {
+                position: "sidebar"
+            }
         },
         {
             name: "trajectorySlug",
