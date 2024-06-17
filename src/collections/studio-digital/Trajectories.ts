@@ -21,6 +21,11 @@ const Trajectory:CollectionConfig = {
             localized: true,
         },
         {
+          name: "path",
+          label:"path",
+          type: "text"
+        },
+        {
             name: "trajectorySlug",
             label: "slug",
             type: "richText",

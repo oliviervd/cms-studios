@@ -25,6 +25,11 @@ const StudioDigitalProjects:CollectionConfig = {
             localized: true,
         },
         {
+            name: "path",
+            label:"path",
+            type: "text"
+        },
+        {
             name: "projectBrief",
             label: "brief description",
             type: "richText",
