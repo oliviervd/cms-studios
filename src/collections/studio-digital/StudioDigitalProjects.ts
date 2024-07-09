@@ -83,12 +83,12 @@ const StudioDigitalProjects:CollectionConfig = {
             },
             fields: [
                 {
-                    name: "date-start",
+                    name: "dateStart",
                     label: "date (start)",
                     type: "text"
                 },
                 {
-                    name: "date-end",
+                    name: "dateEnd",
                     label: "date (end)",
                     type: "text"
                 },
