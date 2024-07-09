@@ -65,7 +65,8 @@ const StudioDigitalProjects:CollectionConfig = {
             name: "postType",
             type: "select",
             admin: {
-                position: "sidebar"
+                position: "sidebar",
+                isClearable: true
             },
             options: [
                 {
