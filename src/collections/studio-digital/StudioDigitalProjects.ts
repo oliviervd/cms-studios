@@ -63,7 +63,6 @@ const StudioDigitalProjects:CollectionConfig = {
         },
         {
             name: "postType",
-            admin:{position: "sidebar"},
             type: "select",
             options: [
                 {
@@ -72,7 +71,7 @@ const StudioDigitalProjects:CollectionConfig = {
                 },
                 {
                     label: "RND",
-                    value: "r&d"
+                    value: "RND"
                 }
             ]
         },
