@@ -71,7 +71,7 @@ const StudioDigitalProjects:CollectionConfig = {
                     value: "project"
                 },
                 {
-                    label: "r&d",
+                    label: "RND",
                     value: "r&d"
                 }
             ]
