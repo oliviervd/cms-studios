@@ -62,7 +62,6 @@ const StudioDigitalProjects:CollectionConfig = {
             ]
         },
         {
-            label: "post type",
             name: "postType",
             admin:{position: "sidebar"},
             type: "select",
