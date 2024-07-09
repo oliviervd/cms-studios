@@ -62,6 +62,23 @@ const StudioDigitalProjects:CollectionConfig = {
             ]
         },
         {
+            type: "row",
+            fields: [
+                {
+                    name: "date-start",
+                    label: "date (start)",
+                    type: "text"
+
+                },
+                {
+                    name: "date-end",
+                    label: "date (end)",
+                    type: "text"
+
+                },
+            ]
+        },
+        {
             name: "active",
             admin: {
                 position: "sidebar"
