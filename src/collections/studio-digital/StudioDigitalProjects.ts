@@ -62,19 +62,35 @@ const StudioDigitalProjects:CollectionConfig = {
             ]
         },
         {
+            label: "type",
+            name: "type",
+            type: "select",
+            options: [
+                {
+                    label: "project",
+                    value: "project"
+                },
+                {
+                    label: "r&d",
+                    value: "r&d"
+                }
+            ]
+        },
+        {
             type: "row",
+            admin: {
+                position: "sidebar"
+            },
             fields: [
                 {
                     name: "date-start",
                     label: "date (start)",
                     type: "text"
-
                 },
                 {
                     name: "date-end",
                     label: "date (end)",
                     type: "text"
-
                 },
             ]
         },
