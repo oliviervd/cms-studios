@@ -61,9 +61,10 @@ const StudioDigitalProjects:CollectionConfig = {
                 }
             ]
         },
-       /* {
-            label: "type",
-            name: "type",
+        {
+            label: "post type",
+            name: "postType",
+            admin:{position: "sidebar"},
             type: "select",
             options: [
                 {
@@ -75,7 +76,7 @@ const StudioDigitalProjects:CollectionConfig = {
                     value: "r&d"
                 }
             ]
-        },*/
+        },
         {
             type: "row",
             admin: {
