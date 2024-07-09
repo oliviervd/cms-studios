@@ -61,7 +61,7 @@ const StudioDigitalProjects:CollectionConfig = {
                 }
             ]
         },
-        {
+       /* {
             label: "type",
             name: "type",
             type: "select",
@@ -75,7 +75,7 @@ const StudioDigitalProjects:CollectionConfig = {
                     value: "r&d"
                 }
             ]
-        },
+        },*/
         {
             type: "row",
             admin: {
