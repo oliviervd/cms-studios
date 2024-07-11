@@ -53,6 +53,14 @@ const Glossary:CollectionConfig = {
             label: "media",
             type: "relationship",
             relationTo: "media"
+        },
+        {
+            name:"url",
+            label:"url",
+            type: "text",
+            admin: {
+                position: "sidebar"
+            }
         }
     ]
 }
