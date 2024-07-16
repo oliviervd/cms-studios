@@ -4,7 +4,6 @@ import { s3Adapter } from "@payloadcms/plugin-cloud-storage/s3";
 import { webpackBundler } from "@payloadcms/bundler-webpack";
 import { slateEditor } from "@payloadcms/richtext-slate";
 import { mongooseAdapter } from "@payloadcms/db-mongodb";
-import webpPlugin from "payload-webp";
 
 import path from "path";
 import Users from "./collections/admin/Users";
@@ -51,7 +50,6 @@ export default buildConfig({
         },
       },
     }),
-    webpPlugin(),
   ],
   db: mongooseAdapter({
     url: process.env.MONGODB_URI,
