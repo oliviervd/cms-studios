@@ -4,6 +4,7 @@ import { s3Adapter } from "@payloadcms/plugin-cloud-storage/s3";
 import { webpackBundler } from "@payloadcms/bundler-webpack";
 import { slateEditor } from "@payloadcms/richtext-slate";
 import { mongooseAdapter } from "@payloadcms/db-mongodb";
+import webpPlugin from "payload-webp";
 
 import path from "path";
 import Users from "./collections/admin/Users";
@@ -15,13 +16,7 @@ import StudioGraphicMembers from "./collections/studio-graphic/StudioGraphicMemb
 import ApiDoc from "./collections/studio-digital/ApiDocs";
 import NavigationSD from "./collections/studio-digital/Navigation"
 import StudioDigitalProjects from "./collections/studio-digital/StudioDigitalProjects";
-import Section from "./collections/design-fest-gent/Section";
-import Works from "./collections/design-fest-gent/Works";
-import Agents from "./collections/design-fest-gent/Agents";
-import Content from "./collections/design-fest-gent/Content";
-import Partners from "./collections/design-fest-gent/Partners";
 import Navigation from "./collections/globals/Navigation";
-import Globals from "./collections/design-fest-gent/Globals";
 import Text from "./collections/globals/Text";
 import Glossary from "./collections/studio-digital/Glossary";
 import Trajectory from "./collections/studio-digital/Trajectories";
@@ -56,6 +51,7 @@ export default buildConfig({
         },
       },
     }),
+    webpPlugin(),
   ],
   db: mongooseAdapter({
     url: process.env.MONGODB_URI,
@@ -89,10 +85,12 @@ export default buildConfig({
     // add new collections here.
     Users,
     Studios,
+
     // studio graphic
     StudioGraphicOutput,
     StudioGraphicOutputType,
     StudioGraphicMembers,
+
     // studio digitaal
     StudioDigitalProjects,
     ApiDoc,
