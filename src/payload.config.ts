@@ -98,14 +98,8 @@ export default buildConfig({
     ApiDoc,
     NavigationSD,
     Glossary,
-      Trajectory,
-    // Design Fest Gent
-    Section,
-    Works,
-    Agents,
-    Globals,
-    Content,
-    Partners,
+    Trajectory,
+
     // globals
     Media,
     Navigation,
