@@ -19,6 +19,7 @@ import Navigation from "./collections/globals/Navigation";
 import Text from "./collections/globals/Text";
 import Glossary from "./collections/studio-digital/Glossary";
 import Trajectory from "./collections/studio-digital/Trajectories";
+import Agents from "./collections/studio-digital/Agents";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_URL,
@@ -95,6 +96,7 @@ export default buildConfig({
     NavigationSD,
     Glossary,
     Trajectory,
+    Agents,
 
     // globals
     Media,

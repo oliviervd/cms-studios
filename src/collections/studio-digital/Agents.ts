@@ -3,7 +3,7 @@ import {CollectionConfig} from "payload/types";
 const Agents:CollectionConfig = {
     slug: "agents",
     admin: {
-        group: "Design Fest Gent",
+        group: "Studio Digitaal",
     },
     access : {
         read: () => true,
@@ -53,25 +53,6 @@ const Agents:CollectionConfig = {
                 fr: "website",
                 nl: "webpagina"
             }
-        },
-        {
-            name: "role",
-            type: "select",
-            hasMany: true,
-            options: [
-                {
-                    value: "coCurator",
-                    label: {
-                        en: "co-curator"
-                    }
-                },
-                {
-                    value: "designer",
-                    label: {
-                        en: "designer"
-                    }
-                }
-            ]
         }
     ]
 }
