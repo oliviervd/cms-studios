@@ -35,7 +35,7 @@
     "cross-env": "^7.0.3",
     "nodemon": "^2.0.6",
     "ts-node": "^9.1.1",
-    "typescript": "^5.0.4"
+    "typescript": "^5.5.3"
   },
   "proxy": "https://p01--admin-cms--qbt6mytl828m.code.run/"
 }
