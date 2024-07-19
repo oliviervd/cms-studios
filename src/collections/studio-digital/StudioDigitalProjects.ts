@@ -76,6 +76,10 @@ const StudioDigitalProjects:CollectionConfig = {
                 {
                     label: "RND",
                     value: "RND"
+                },
+                {
+                    label:"longRead",
+                    value:"long-read"
                 }
             ]
         },
