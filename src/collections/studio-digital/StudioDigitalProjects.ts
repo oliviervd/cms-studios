@@ -80,6 +80,10 @@ const StudioDigitalProjects:CollectionConfig = {
                 {
                     label:"longRead",
                     value:"long-read"
+                },
+                {
+                    label:"API",
+                    value:"API"
                 }
             ]
         },
