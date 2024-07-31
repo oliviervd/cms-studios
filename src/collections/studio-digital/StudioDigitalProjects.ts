@@ -84,6 +84,10 @@ const StudioDigitalProjects:CollectionConfig = {
                 {
                     label:"API",
                     value:"API"
+                },
+                {
+                    label:"documentation",
+                    value: "docs"
                 }
             ]
         },
