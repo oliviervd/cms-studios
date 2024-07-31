@@ -13,7 +13,6 @@ import StudioGraphicOutput from "./collections/studio-graphic/StudioGraphicOutpu
 import StudioGraphicOutputType from "./collections/studio-graphic/StudioGraphicOutputTypes";
 import StudioGraphicMembers from "./collections/studio-graphic/StudioGraphicMembers";
 import ApiDoc from "./collections/studio-digital/ApiDocs";
-import NavigationSD from "./collections/studio-digital/Navigation"
 import StudioDigitalProjects from "./collections/studio-digital/StudioDigitalProjects";
 import Navigation from "./collections/globals/Navigation";
 import Text from "./collections/globals/Text";
@@ -93,7 +92,6 @@ export default buildConfig({
     // studio digitaal
     StudioDigitalProjects,
     ApiDoc,
-    NavigationSD,
     Glossary,
     Trajectory,
     Agents,
